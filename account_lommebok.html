@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Build 2.0</title>
+<!--  <link rel="shortcut icon" href="assets/img/favicons/icon-favicon.svg" type="image/svg">-->
+<!--  <link href="assets/fonts/Geometria.woff2" as="font" rel="preload" crossorigin="anonymous">-->
+<!--  <link href="assets/fonts/Geometria-Bold.woff2" as="font" rel="preload" crossorigin="anonymous">-->
+  <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+  <body>
+    <div class="wrapper">
+      <header class="headerAccount">
+    <div class="headerAccount__container">
+      <a href="https://fgfox.com" class="headerAccount__logo">
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="https://fgfox.com/img/app/logo-min.svg"
+          />
+          <img src="https://fgfox.com/img/app/logo.svg" alt="logo" />
+        </picture>
+      </a>
+      <button
+        type="button"
+        class="btn-icon headerAccount__link js-openSidebar"
+      >
+        <i class="icon-menu"></i>
+        <span class="sticker"></span>
+      </button>
+      <div class="headerAccount__home">
+        <a href="https://fgfox.com" class="btn">Til hoved</a>
+      </div>
+      <div class="headerAccount__lang">
+        <div class="languages">
+          <div class="languages__current">
+            <svg class="svg-no">
+              <use xlink:href="/img/lang.svg?v=34097#svg-no"></use>
+            </svg>
+            <span>Norwegian</span>
+            <i class="icon-arrow"></i>
+          </div>
+          <div class="languages__choose">
+            <a href="https://fgfox.com/lang/set/en" class="languages__link">
+              <svg class="svg-en">
+                <use xlink:href="/img/lang.svg?v=34097#svg-en"></use>
+              </svg>
+              <span class="languages__code">en</span>
+              <span class="languages__name">English</span>
+            </a>
+            <a href="https://fgfox.com/lang/set/fi" class="languages__link">
+              <svg class="svg-fi">
+                <use xlink:href="/img/lang.svg?v=34097#svg-fi"></use>
+              </svg>
+              <span class="languages__code">fi</span>
+              <span class="languages__name">Finnish</span>
+            </a>
+            <a href="https://fgfox.com/lang/set/pl" class="languages__link">
+              <svg class="svg-pl">
+                <use xlink:href="/img/lang.svg?v=34097#svg-pl"></use>
+              </svg>
+              <span class="languages__code">pl</span>
+              <span class="languages__name">Polish</span>
+            </a>
+            <a href="https://fgfox.com/lang/set/de" class="languages__link">
+              <svg class="svg-de">
+                <use xlink:href="/img/lang.svg?v=34097#svg-de"></use>
+              </svg>
+              <span class="languages__code">de</span>
+              <span class="languages__name">German</span>
+            </a>
+            <a href="https://fgfox.com/lang/set/fr" class="languages__link">
+              <svg class="svg-fr">
+                <use xlink:href="/img/lang.svg?v=34097#svg-fr"></use>
+              </svg>
+              <span class="languages__code">fr</span>
+              <span class="languages__name">French</span>
+            </a>
+            <a href="https://fgfox.com/lang/set/es" class="languages__link">
+              <svg class="svg-es">
+                <use xlink:href="/img/lang.svg?v=34097#svg-es"></use>
+              </svg>
+              <span class="languages__code">es</span>
+              <span class="languages__name">Spanish</span>
+            </a>
+            <a href="https://fgfox.com/lang/set/it" class="languages__link">
+              <svg class="svg-it">
+                <use xlink:href="/img/lang.svg?v=34097#svg-it"></use>
+              </svg>
+              <span class="languages__code">it</span>
+              <span class="languages__name">Italian</span>
+            </a>
+            <a href="https://fgfox.com/lang/set/el" class="languages__link">
+              <svg class="svg-el">
+                <use xlink:href="/img/lang.svg?v=34097#svg-el"></use>
+              </svg>
+              <span class="languages__code">el</span>
+              <span class="languages__name">Greek</span>
+            </a>
+            <a href="https://fgfox.com/lang/set/au" class="languages__link">
+              <svg class="svg-au">
+                <use xlink:href="/img/lang.svg?v=34097#svg-au"></use>
+              </svg>
+              <span class="languages__code">au</span>
+              <span class="languages__name">Australian</span>
+            </a>
+            <a href="https://fgfox.com/lang/set/ca" class="languages__link">
+              <svg class="svg-ca">
+                <use xlink:href="/img/lang.svg?v=34097#svg-ca"></use>
+              </svg>
+              <span class="languages__code">ca</span>
+              <span class="languages__name">Canadian</span>
+            </a>
+            <a href="https://fgfox.com/lang/set/cs" class="languages__link">
+              <svg class="svg-cs">
+                <use xlink:href="/img/lang.svg?v=34097#svg-cs"></use>
+              </svg>
+              <span class="languages__code">cs</span>
+              <span class="languages__name">Czech</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+      <div class="accountPage">
+        <div class="accountPage__sidebar">
+          <aside class="accountSidebar">
+            <div class="accountSidebar__profile">
+              <div class="accountSidebar__name">shaikov.egor@yandex.ru</div>
+              <div class="accountSidebar__money">€ 0.00</div>
+              <div class="accountSidebar__icon js-accountSidebar">
+                <i class="icon-lkmenu"></i>
+              </div>
+              <div class="accountSidebar__info">
+                <div class="accountSidebar__withdraw">
+                  <p>€ 0.00</p>
+                  <p>Midler tatt ut</p>
+                </div>
+                <div class="accountSidebar__locked">
+                  <p>0</p>
+                  <p>Bonuser i kø</p>
+                </div>
+              </div>
+              <div class="accountSidebar__btn">
+                <a href="https://fgfox.com/account/deposit" class="btn"
+                  >Innskudd</a
+                >
+              </div>
+              <div class="accountSidebar__toggler js-accountSidebar"></div>
+            </div>
+            <div class="accountSidebar__menu">
+              <a href="https://fgfox.com/account/promo" class="">
+                <i class="icon-promo"></i>
+                <span>Promo</span>
+              </a>
+              <a href="https://fgfox.com/account/profile" class="">
+                <i class="icon-profile"></i>
+                <span>Profil</span>
+              </a>
+              <a href="https://fgfox.com/account/wallet" class="active">
+                <i class="icon-wallet"></i>
+                <span>Lommebok</span>
+              </a>
+              <a href="https://fgfox.com/account/bonuses" class="">
+                <i class="icon-bonus"></i>
+                <span>Bonus</span>
+              </a>
+              <a href="https://fgfox.com/account/history" class="">
+                <i class="icon-game"></i>
+                <span>Spillhistorie</span>
+              </a>
+              <a href="https://fgfox.com/logout">
+                <i class="icon-logout"></i>
+                <span>Exit</span>
+              </a>
+            </div>
+          </aside>
+        </div>
+        <main class="accountPage__main">
+          <div class="accountPage__title">Lommebok</div>
+          <div class="accountPage__content">
+            <div class="accountTabs">
+              <ul class="accountTabs__head">
+                <li
+                  class="accountTabs__tab js-accountTab active"
+                  data-target="balance"
+                >
+                  Balansere
+                </li>
+                <li
+                  class="accountTabs__tab js-accountTab"
+                  data-target="deposit"
+                >
+                  Innskudd
+                </li>
+                <li
+                  class="accountTabs__tab js-accountTab"
+                  data-target="withdrawal"
+                >
+                  Uttak midler
+                </li>
+                <li
+                  class="accountTabs__tab js-accountTab"
+                  data-target="transactions"
+                >
+                  Transaksjonshistorikk
+                </li>
+              </ul>
+              <div class="accountTabs__body">
+                <div
+                  id="balance"
+                  class="accountTabs__content js-accountTabContent "
+                >
+                  <div class="accountWallet">
+                    <div class="accountWallet__balance">
+                      <div class="accountBalance">
+                        <div class="accountBalance__title">Regnskap</div>
+                        <div class="accountBalance__desc">
+                          Kjære spiller, i vårt casino kan du ha flere kontoer
+                          med forskjellige valutaer og bytte mellom dem når som
+                          helst.
+                        </div>
+                        <div class="accountBalance__grid">
+                          <div class="balanceCard js-wallet-card">
+                            <div class="balanceCard__active">Aktiv</div>
+                            <div class="balanceCard__currency">EUR</div>
+                            <div class="balanceCard__amount">
+                              
+                              <span>€</span>
+                               0.00
+                            </div>
+                            <div class="balanceCard__info">
+                              <div class="balanceCard__withdraw">
+                                <p>0.00</p>
+                                <p>Midler tatt ut</p>
+                              </div>
+                              <div class="balanceCard__available">
+                                <p>0.00</p>
+                                <p>Tilgjengelig for uttak</p>
+                              </div>
+                            </div>
+                            <div class="balanceCard__deposit">
+                              <button
+                                type="button"
+                                class="btn btn-transparent"
+                                onclick="openAccountTab('deposit')"
+                              >
+                                Innskudd
+                              </button>
+                            </div>
+                          </div>
+                          <div class="balanceCard js-wallet-card">
+                            <div class="balanceCard__active">
+                              <div class="checkbox__wrap">
+                                <p>Gjør aktiv</p>
+                                <label class="checkbox js-checkbox">
+                                  <input
+                                    type="checkbox"
+                                    name="currency"
+                                    value="1"
+                                    data-currency="USD"
+                                    data-modal=""
+                                  />
+                                  <span class="checkbox__toggle"></span>
+                                </label>
+                              </div>
+                            </div>
+                            <div class="balanceCard__currency">USD</div>
+                            <div class="balanceCard__amount">
+                              <span>$</span>
+                              0.00
+                            </div>
+                            <div class="balanceCard__info">
+                              <div class="balanceCard__withdraw">
+                                <p>0.00</p>
+                                <p>Midler tatt ut</p>
+                              </div>
+                              <div class="balanceCard__available">
+                                <p>0.00</p>
+                                <p>Tilgjengelig for uttak</p>
+                              </div>
+                            </div>
+                            <div class="balanceCard__deposit">
+                              <button
+                                type="button"
+                                class="btn btn-transparent js-change-currency"
+                                data-currency="USD"
+                              >
+                                Innskudd
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="deposit"
+                  class="accountTabs__content js-accountTabContent "
+                >
+                  <div class="paymentForm__wrap js-content">
+                    <form
+                      action="https://fgfox.com/account/deposit/make"
+                      class="paymentForm js-paymentForm"
+                      method="post"
+                      data-type="deposit"
+                      siq_id="autopick_1589"
+                    >
+                      <input
+                        type="hidden"
+                        name="_token"
+                        value="no4rw0NXavMCxncpS3l3Mni5oFE36Lf3yJhgcKK0"
+                      />
+                      <input
+                        type="hidden"
+                        name="61b55abf4a8ec35037d792fb596401db"
+                      />
+                      <div class="paymentForm__balance">
+                        <div class="paymentForm__balanceHead">
+                          <p>Balansere</p>
+                          <div class="paymentForm__balanceValue">
+                            <span>€</span>
+                            0.00
+                          </div>
+                        </div>
+                        <div class="paymentForm__balanceBody">
+                          <div
+                            class="paymentForm__method js-paymentForm-method"
+                            data-requisites="smartcashew"
+                            data-info=""
+                            data-payment_name="VISA MasterCard"
+                            data-min_deposit="20"
+                          >
+                            <input
+                              type="radio"
+                              name="payment-method"
+                              value="smartcashew"
+                            />
+                            <img
+                              src="https://bwcdnimage-001.easyrocket.net/smartcashew.png"
+                              alt="VISA MasterCard"
+                            />
+                            <p>VISA MasterCard</p>
+                          </div>
+                          <div
+                            class="paymentForm__method js-paymentForm-method"
+                            data-requisites="interkassa_5afda0ea3b1eafaf6b8b4568"
+                            data-info=""
+                            data-payment_name="VISA/MC"
+                            data-min_deposit="20"
+                          >
+                            <input
+                              type="radio"
+                              name="payment-method"
+                              value="interkassa_5afda0ea3b1eafaf6b8b4568"
+                            />
+                            <img
+                              src="https://bwcdnimage-001.easyrocket.net/interkassa.png"
+                              alt="VISA/MC"
+                            />
+                            <p>VISA/MC</p>
+                          </div>
+                          <div
+                            class="paymentForm__method js-paymentForm-method"
+                            data-requisites="interkassa_5afda0ea3b1eafaf6b8b4568"
+                            data-info=""
+                            data-payment_name="ApplePay"
+                            data-min_deposit="20"
+                          >
+                            <input
+                              type="radio"
+                              name="payment-method"
+                              value="interkassa_5afda0ea3b1eafaf6b8b4568"
+                            />
+                            <img
+                              src="https://bwcdnimage-001.easyrocket.net/applepay.png"
+                              alt="ApplePay"
+                            />
+                            <p>ApplePay</p>
+                          </div>
+                          <div
+                            class="paymentForm__method js-paymentForm-method"
+                            data-requisites="skrill_native"
+                            data-info=""
+                            data-payment_name="Skrill"
+                            data-min_deposit="20"
+                          >
+                            <input
+                              type="radio"
+                              name="payment-method"
+                              value="skrill_native"
+                            />
+                            <img
+                              src="https://bwcdnimage-001.easyrocket.net/skrill_native.png"
+                              alt="Skrill"
+                            />
+                            <p>Skrill</p>
+                          </div>
+                          <div
+                            class="paymentForm__method js-paymentForm-method"
+                            data-requisites="skrill_neteller"
+                            data-info=""
+                            data-payment_name="Neteller"
+                            data-min_deposit="20"
+                          >
+                            <input
+                              type="radio"
+                              name="payment-method"
+                              value="skrill_neteller"
+                            />
+                            <img
+                              src="https://bwcdnimage-001.easyrocket.net/skrill_neteller.jpg"
+                              alt="Neteller"
+                            />
+                            <p>Neteller</p>
+                          </div>
+                          <div
+                            class="paymentForm__method js-paymentForm-method"
+                            data-requisites="jeton"
+                            data-info=""
+                            data-payment_name="Jeton"
+                            data-min_deposit="20"
+                          >
+                            <input
+                              type="radio"
+                              name="payment-method"
+                              value="jeton"
+                            />
+                            <img
+                              src="https://bwcdnimage-001.easyrocket.net/jeton.jpg"
+                              alt="Jeton"
+                            />
+                            <p>Jeton</p>
+                          </div>
+                          <div
+                            class="paymentForm__method js-paymentForm-method"
+                            data-requisites="payop"
+                            data-info=""
+                            data-payment_name="PayOp"
+                            data-min_deposit="20"
+                          >
+                            <input
+                              type="radio"
+                              name="payment-method"
+                              value="payop"
+                            />
+                            <img
+                              src="https://bwcdnimage-001.easyrocket.net/payop.png"
+                              alt="PayOp"
+                            />
+                            <p>PayOp</p>
+                          </div>
+                          <div
+                            class="paymentForm__method js-paymentForm-method"
+                            data-requisites="cashtocode"
+                            data-info=""
+                            data-payment_name="Cash2Code"
+                            data-min_deposit="20"
+                          >
+                            <input
+                              type="radio"
+                              name="payment-method"
+                              value="cashtocode"
+                            />
+                            <img
+                              src="https://bwcdnimage-001.easyrocket.net/cashtocode.svg"
+                              alt="Cash2Code"
+                            />
+                            <p>Cash2Code</p>
+                          </div>
+                          <div
+                            class="paymentForm__method js-paymentForm-method"
+                            data-requisites="piastrix"
+                            data-info=""
+                            data-payment_name="Piastrix"
+                            data-min_deposit="20"
+                          >
+                            <input
+                              type="radio"
+                              name="payment-method"
+                              value="piastrix"
+                            />
+                            <img
+                              src="https://bwcdnimage-001.easyrocket.net/piastrix.png"
+                              alt="Piastrix"
+                            />
+                            <p>Piastrix</p>
+                          </div>
+                          <div
+                            class="paymentForm__method js-paymentForm-method"
+                            data-requisites="coinspayd"
+                            data-info=""
+                            data-payment_name="Cryptocurrencies"
+                            data-min_deposit="20"
+                          >
+                            <input
+                              type="radio"
+                              name="payment-method"
+                              value="coinspayd"
+                            />
+                            <img
+                              src="https://bwcdnimage-001.easyrocket.net/crypto_logo.png"
+                              alt="Cryptocurrencies"
+                            />
+                            <p>Cryptocurrencies</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="paymentForm__block">
+                        <div class="paymentForm__name js-paymentForm-name">
+                          Velg en betalingsmetode
+                        </div>
+                        <div class="paymentForm__min">
+                          <b>Min.&nbsp;innskudd:</b>
+                          €
+                          <span class="js-paymentForm-min">20</span>
+                        </div>
+                        <div
+                          class="paymentForm__fast js-paymentForm-amountWrap"
+                        >
+                          <div
+                            class="paymentForm__fastItem js-paymentForm-fastAmount"
+                            data-value="40"
+                          >
+                            <span>40</span>
+                          </div>
+                          <div
+                            class="paymentForm__fastItem js-paymentForm-fastAmount active"
+                            data-value="100"
+                          >
+                            <span>100</span>
+                          </div>
+                          <div
+                            class="paymentForm__fastItem js-paymentForm-fastAmount"
+                            data-value="500"
+                          >
+                            <span>500</span>
+                          </div>
+                          <div
+                            class="paymentForm__fastItem js-paymentForm-fastAmount"
+                            data-value="1000"
+                          >
+                            <span>1K</span>
+                          </div>
+                        </div>
+                        <div
+                          class="paymentForm__amount js-paymentForm-amountWrap"
+                        >
+                          <div class="input">
+                            <input
+                              type="tel"
+                              name="amount"
+                              class="js-paymentForm-amount"
+                              value="20"
+                              placeholder="Sum"
+                              required=""
+                              inputmode="text"
+                            />
+                            <span>€</span>
+                          </div>
+                        </div>
+                        <div
+                          class="paymentForm__depositInfo js-paymentForm-depositInfo"
+                        ></div>
+                        <div
+                          class="paymentForm__extraForm js-paymentForm-extraForm"
+                        ></div>
+                        <div class="paymentForm__submit">
+                          <button type="submit" class="btn btn-transparent">
+                            Innskudd
+                            <span class="js-paymentForm-submitExtra"></span>
+                          </button>
+                        </div>
+                        <div class="paymentForm__depositBonuses">
+                          <div class="walletDepositBonuses">
+                            <div
+                              class="walletDepositBonuses__item js-paymentForm-bonus"
+                              data-id="99"
+                              data-bonus='{"freeSpins":100,"id":99,"percent":100,"maxPayoutFloat":100,"minDepositAmountFloat":20,"extraInfoTemplate":"+ Bonus {amount}\u20ac og {fs}FS"}'
+                            >
+                              <div class="walletDepositBonuses__head">
+                                <div class="walletDepositBonuses__title">
+                                  <p>
+                                    <span>Get 100% Bonus + 100 Free Spins</span>
+                                  </p>
+                                  <div class="bonusInfo">
+                                    <strong>100%</strong>
+                                    <strong>fra innskuddet € 20</strong>
+                                    <strong>+100 FS</strong>
+                                  </div>
+                                </div>
+                                <a
+                                  href="https://fgfox.com/bonuses/deposit-bonus/99"
+                                  class="walletDepositBonuses__icon js-paymentForm-bonusInfo"
+                                  rel="ajax:modal"
+                                >
+                                  <i class="icon-info2"></i>
+                                </a>
+                              </div>
+                              <div class="walletDepositBonuses__info">
+                                <div class="walletDepositBonuses__desc">
+                                  <p>Min.&nbsp;innskudd</p>
+                                  <p>€ 20</p>
+                                </div>
+                                <div class="walletDepositBonuses__desc">
+                                  <p>Wager</p>
+                                  <p>x40</p>
+                                </div>
+                              </div>
+                              <div class="walletDepositBonuses__btn">
+                                <button
+                                  type="button"
+                                  class="btn btn-transparent btn-small "
+                                >
+                                  <span>Få en bonus</span>
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-small btn-red"
+                                >
+                                  <span>Avbryt</span>
+                                </button>
+                              </div>
+                            </div>
+                            <div
+                              class="walletDepositBonuses__item js-paymentForm-bonus"
+                              data-id="104"
+                              data-bonus='{"freeSpins":100,"id":104,"percent":100,"maxPayoutFloat":1000,"minDepositAmountFloat":200,"extraInfoTemplate":"+ Bonus {amount}\u20ac og {fs}FS"}'
+                            >
+                              <div class="walletDepositBonuses__head">
+                                <div class="walletDepositBonuses__title">
+                                  <p>
+                                    <span
+                                      >Get VIP x2 Bonus + 100 Free Spins</span
+                                    >
+                                  </p>
+                                  <div class="bonusInfo">
+                                    <strong>100%</strong>
+                                    <strong>fra innskuddet € 200</strong>
+                                    <strong>+100 FS</strong>
+                                  </div>
+                                </div>
+                                <a
+                                  href="https://fgfox.com/bonuses/deposit-bonus/104"
+                                  class="walletDepositBonuses__icon js-paymentForm-bonusInfo"
+                                  rel="ajax:modal"
+                                >
+                                  <i class="icon-info2"></i>
+                                </a>
+                              </div>
+                              <div class="walletDepositBonuses__info">
+                                <div class="walletDepositBonuses__desc">
+                                  <p>Min.&nbsp;innskudd</p>
+                                  <p>€ 200</p>
+                                </div>
+                                <div class="walletDepositBonuses__desc">
+                                  <p>Wager</p>
+                                  <p>x40</p>
+                                </div>
+                              </div>
+                              <div class="walletDepositBonuses__btn">
+                                <button
+                                  type="button"
+                                  class="btn btn-transparent btn-small "
+                                >
+                                  <span>Få en bonus</span>
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-small btn-red"
+                                >
+                                  <span>Avbryt</span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="paymentForm__accordion">
+                          <div class="about__accordion js-deposit-accordion">
+                            <div class="about__item active">
+                              <div class="about__head">
+                                <div class="about__title">
+                                  Hva gjør jeg hvis innskuddet ikke gikk
+                                  gjennom?
+                                </div>
+                                <div class="about__icon">
+                                  <i class="icon-arrow2"></i>
+                                </div>
+                              </div>
+                              <div class="about__body" >
+                                <a
+                                  href="https://fgfox.com/faq"
+                                  class="btn btn-transparent"
+                                >
+                                  Å lese
+                                </a>
+                                <a href="#faq" class="btn btn-transparent ">
+                                  Trenger hjelp
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div
+                  id="withdrawal"
+                  class="accountTabs__content js-accountTabContent "
+                >
+                  <div class="paymentForm__wrap js-content">
+                    <form
+                      class="paymentForm js-paymentForm"
+                     
+                    >
+                      <input
+                        type="hidden"
+                        name="_token"
+                      />
+                      <input
+                        type="hidden"
+                      />
+                      <div class="paymentForm__balance">
+                        <div class="paymentForm__balanceHead">
+                          <p>Balansere</p>
+                          <div class="paymentForm__balanceValue">
+                            <span>€</span>
+                            0.00
+                          </div>
+                        </div>
+                        <div class="paymentForm__balanceBody">
+                          <div
+                            class="paymentForm__method js-paymentForm-method"
+                            data-requisites="skrill_native"
+                            data-info=""
+                            data-payment_name="Skrill"
+                            data-min_deposit="40"
+                          >
+                            <input
+                              type="radio"
+                              name="payment-method"
+                              value="skrill_native"
+                            />
+                            <img
+                              src="https://bwcdnimage-001.easyrocket.net/skrill_native.png"
+                              alt="Skrill"
+                            />
+                            <p>Skrill</p>
+                          </div>
+                          <div
+                            class="paymentForm__method js-paymentForm-method"
+                            data-requisites="jeton"
+                            data-info=""
+                            data-payment_name="Jeton"
+                            data-min_deposit="40"
+                          >
+                            <input
+                              type="radio"
+                              name="payment-method"
+                              value="jeton"
+                            />
+                            <img
+                              src="https://bwcdnimage-001.easyrocket.net/jeton.jpg"
+                              alt="Jeton"
+                            />
+                            <p>Jeton</p>
+                          </div>
+                          <div
+                            class="paymentForm__method js-paymentForm-method"
+                            data-requisites="piastrix"
+                            data-info=""
+                            data-payment_name="Piastrix"
+                            data-min_deposit="40"
+                          >
+                            <input
+                              type="radio"
+                              name="payment-method"
+                              value="piastrix"
+                            />
+                            <img
+                              src="https://bwcdnimage-001.easyrocket.net/piastrix.png"
+                              alt="Piastrix"
+                            />
+                            <p>Piastrix</p>
+                          </div>
+                          <div
+                            class="paymentForm__method js-paymentForm-method"
+                            data-requisites="coinspayd"
+                            data-info=""
+                            data-payment_name="Cryptocurrencies"
+                            data-min_deposit="40"
+                          >
+                            <input
+                              type="radio"
+                              name="payment-method"
+                              value="coinspayd"
+                            />
+                            <img
+                              src="https://bwcdnimage-001.easyrocket.net/crypto_logo.png"
+                              alt="Cryptocurrencies"
+                            />
+                            <p>Cryptocurrencies</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="paymentForm__block">
+                        <div class="paymentForm__name js-paymentForm-name">
+                          Velg en betalingsmetode
+                        </div>
+                        <div class="paymentForm__available">
+                          Tilgjengelig for uttak:
+                          <span>€ 0.00</span>
+                        </div>
+                        <div class="paymentForm__min">
+                          <b>Minimum uttaksbeløp:</b>
+                          €
+                          <span class="js-paymentForm-min">40</span>
+                        </div>
+                        <div class="paymentForm__amount">
+                          <div class="input">
+                            <input
+                              type="tel"
+                              name="amount"
+                              class="js-paymentForm-amount"
+                              value="40"
+                              placeholder="Sum"
+                              required=""
+                              inputmode="text"
+                            />
+                            <span>€</span>
+                          </div>
+                        </div>
+                        <div
+                          class="paymentForm__depositInfo js-paymentForm-depositInfo"
+                        ></div>
+                        <div
+                          class="paymentForm__extraForm js-paymentForm-extraForm"
+                        ></div>
+                        <div class="paymentForm__submit">
+                          <button type="submit" class="btn btn-transparent">Sende</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div
+                  id="transactions"
+                  class="accountTabs__content js-accountTabContent active"
+                >
+                  <div class="historyTable">
+                    <div class="tableBuilder js-table">
+                      <div class="tableBuilder__filter">
+                        <form
+                          action="https://fgfox.com/account/wallet/history"
+                          class="tableBuilderFilter js-table-form"
+                          siq_id="autopick_1519"
+                        >
+                          <input type="hidden" name="page" value="1" />
+                          <div class="tableBuilderFilter__grid">
+                            <div class="tableBuilderFilter__dateStart">
+                              <div class="input">
+                                <input
+                                  type="text"
+                                  name="date-start"
+                                  value=""
+                                  placeholder="Dato fra"
+                                  data-id="gR14xiwI"
+                                  data-lang="en-US"
+                                  autocomplete="off"
+                                  readonly=""
+                                />
+                              </div>
+                            
+                            </div>
+                            <div class="tableBuilderFilter__dateEnd">
+                              <div class="input">
+                                <input
+                                  type="text"
+                                  name="date-end"
+                                  value=""
+                                  placeholder="Date til"
+                                  data-id="jgAe5BA8"
+                                  data-lang="en-US"
+                                  autocomplete="off"
+                                  readonly=""
+                                />
+                              </div>
+                             
+                            </div>
+                            <div class="tableBuilderFilter__amountFrom">
+                              <div class="input">
+                                <input
+                                  type="text"
+                                  name="amount-from"
+                                  placeholder="Beløp fra"
+                                  inputmode="text"
+                                />
+                              </div>
+                            </div>
+                            <div class="tableBuilderFilter__amountTo">
+                              <div class="input">
+                                <input
+                                  type="text"
+                                  name="amount-to"
+                                  placeholder="Beløp opp til"
+                                  inputmode="text"
+                                />
+                              </div>
+                            </div>
+                            <div class="tableBuilderFilter__sort">
+                              <div class="inputSelect">
+                                <select
+                                  name="sort-with-dir"
+                                  data-placeholder="Sortering"
+                                  data-select2-id="1"
+                                  tabindex="-1"
+                                  class="select2-hidden-accessible"
+                                  aria-hidden="true"
+                                >
+                                  <option data-select2-id="3"></option>
+                                  <option value="amount-asc">Sum ⇧</option>
+                                  <option value="amount-desc">Sum ⇩</option>
+                                  <option value="date_create-asc">
+                                    Dato ⇧
+                                  </option>
+                                  <option value="date_create-desc">
+                                    Dato ⇩
+                                  </option></select
+                                ><span
+                                  class="select2 select2-container select2-container--default"
+                                  dir="ltr"
+                                  data-select2-id="2"
+                                  style="width: 100%"
+                                  ><span class="selection"
+                                    ><span
+                                      class="select2-selection select2-selection--single"
+                                      role="combobox"
+                                      aria-haspopup="true"
+                                      aria-expanded="false"
+                                      tabindex="0"
+                                      aria-disabled="false"
+                                      aria-labelledby="select2-sort-with-dir-gu-container"
+                                      ><span
+                                        class="select2-selection__rendered"
+                                        id="select2-sort-with-dir-gu-container"
+                                        role="textbox"
+                                        aria-readonly="true"
+                                        ><span
+                                          class="select2-selection__placeholder"
+                                          >Sortering</span
+                                        ></span
+                                      ><span
+                                        class="select2-selection__arrow"
+                                        role="presentation"
+                                        ><b
+                                          role="presentation"
+                                        ></b></span></span></span
+                                  ><span
+                                    class="dropdown-wrapper"
+                                    aria-hidden="true"
+                                  ></span
+                                ></span>
+                              </div>
+                            </div>
+                            <div class="tableBuilderFilter__select">
+                              <div class="inputSelect">
+                                <select
+                                  name="types[]"
+                                  data-placeholder="En type"
+                                  multiple=""
+                                  data-select2-id="4"
+                                  tabindex="-1"
+                                  class="select2-hidden-accessible"
+                                  aria-hidden="true"
+                                >
+                                  <option value="0">Etterfylling</option>
+                                  <option value="1">Konklusjon</option>
+                                  <option value="6">Manuelt innskudd</option>
+                                  <option value="7">
+                                    Manuell uttak av midler
+                                  </option></select
+                                ><span
+                                  class="select2 select2-container select2-container--default"
+                                  dir="ltr"
+                                  data-select2-id="5"
+                                  style="width: 100%"
+                                  ><span class="selection"
+                                    ><span
+                                      class="select2-selection select2-selection--multiple"
+                                      role="combobox"
+                                      aria-haspopup="true"
+                                      aria-expanded="false"
+                                      tabindex="-1"
+                                      aria-disabled="false"
+                                      ><ul class="select2-selection__rendered">
+                                        <li
+                                          class="select2-search select2-search--inline"
+                                        >
+                                          <input
+                                            class="select2-search__field"
+                                            type="search"
+                                            tabindex="0"
+                                            autocomplete="off"
+                                            autocorrect="off"
+                                            autocapitalize="none"
+                                            spellcheck="false"
+                                            role="searchbox"
+                                            aria-autocomplete="list"
+                                            placeholder="En type"
+                                            style="width: 0px"
+                                          />
+                                        </li></ul></span></span
+                                  ><span
+                                    class="dropdown-wrapper"
+                                    aria-hidden="true"
+                                  ></span
+                                ></span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tableBuilderFilter__submit">
+                            <div class="tableBuilderFilter__apply">
+                              <button
+                                type="submit"
+                                class="btn btn-transparent js-disableButton disabled"
+                              >
+                                <span>Søk</span>
+                              </button>
+                            </div>
+                            <div class="tableBuilderFilter__reset">
+                              <button
+                                type="reset"
+                                class="btn btn-transparent js-disableButton disabled"
+                              >
+                                <span>Avbryt</span>
+                              </button>
+                            </div>
+                            <div class="tableBuilderFilter__update">
+                              <button type="submit" class="btn btn-transparent">
+                                <i class="icon-reload"></i>
+                                <span>Forfriske</span>
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="tableBuilder__grid js-table-grid">
+                        <div class="tableBuilder__responsive">
+                          <div class="tableBuilder__table">
+                            <div class="tableBuilder__head">
+                              <div class="tableBuilder__row">
+                                <div class="tableBuilder__col">ID / Metode</div>
+                                <div class="tableBuilder__col">En type</div>
+                                <div class="tableBuilder__col">Sum</div>
+                                <div class="tableBuilder__col">Kommisjon</div>
+                                <div class="tableBuilder__col">Valuta</div>
+                                <div class="tableBuilder__col">
+                                  Dato / Status
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tableBuilder__empty">
+                              Transaksjoner ikke funnet
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tableBuilder__pagination"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <aside class="sidebar">
+        <div class="sidebar__overlay js-closeSidebar"></div>
+        <div class="sidebar__content">
+          <div class="sidebar__close js-closeSidebar">
+            <i class="icon-close2"></i>
+          </div>
+          <div class="sidebar__top">
+            <a href="https://fgfox.com" class="sidebar__logo">
+              <img src="https://fgfox.com/img/app/logo.svg" alt="logo" />
+            </a>
+            <div class="sidebar__btns sidebar__btns_logged">
+              <div class="sidebar__deposit">
+                <a
+                  href="https://fgfox.com/account/deposit/deposit-modal"
+                  class="btn"
+                  rel="ajax:modal"
+                >
+                  Innskudd € 0.00
+                </a>
+              </div>
+            </div>
+          </div>
+          <nav class="sidebar__menu">
+            <ul class="menu__list menu__list_header">
+              <li class="menu__item">
+                <a href="https://fgfox.com/casino" class="menu__link">
+                  Alle spill
+                </a>
+              </li>
+              <li class="menu__item">
+                <a
+                  href="https://fgfox.com/bonuses"
+                  class="menu__link menu__link_bonus"
+                >
+                  Bonuser
+                  <span class="sticker">7</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a
+                  href="https://fgfox.com/tournaments"
+                  class="menu__link menu__link_tournament"
+                >
+                  <p>Turneringer</p>
+                  <span class="sticker">3</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a
+                  href="https://fgfox.com/vip-club"
+                  class="menu__link menu__link_blink"
+                >
+                  VIP-klubb
+                </a>
+              </li>
+            </ul>
+            <div class="menuCategories">
+              <a
+                href="#categories"
+                class="menu__link menu__link_submenu js-activeSubmenu active"
+              >
+                <span>Spillkategorier</span>
+                <i class="icon-arrow"></i>
+                <span class="sticker"></span>
+              </a>
+              <div class="submenu" style="display: block">
+                <ul class="submenu__list">
+                  <li class="submenu__item">
+                    <a
+                      href="https://fgfox.com/casino/top"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-top"></i>
+                      <p>Top spill</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a
+                      href="https://fgfox.com/casino/new"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-new"></i>
+                      <p>Ny</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a
+                      href="https://fgfox.com/casino/jackpot"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-jackpots"></i>
+                      <p>Jackpotter</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a
+                      href="https://fgfox.com/casino/live"
+                      class="submenu__link js-filterGames-categoryItem live"
+                    >
+                      <i class="icon-live2"></i>
+                      <p>Live</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a
+                      href="https://fgfox.com/casino/megaways"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-megaways"></i>
+                      <p>MEGAWAYS</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a
+                      href="https://fgfox.com/casino/drops_win"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-drops_win"></i>
+                      <p>Drops&amp;Wins</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item" style="display: none">
+                    <a
+                      href="https://fgfox.com/casino/book"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-book"></i>
+                      <p>Book</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item" style="display: none">
+                    <a
+                      href="https://fgfox.com/casino/bonus_games"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-bonus_games"></i>
+                      <p>Bonusspill</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item" style="display: none">
+                    <a
+                      href="https://fgfox.com/casino/slots"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-slots"></i>
+                      <p>Spilleautomater</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item" style="display: none">
+                    <a
+                      href="https://fgfox.com/casino/roulette"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-roulette"></i>
+                      <p>Rulett</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item" style="display: none">
+                    <a
+                      href="https://fgfox.com/casino/favorites"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-favorites"></i>
+                      <p>Favoritter</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item" style="display: none">
+                    <a
+                      href="https://fgfox.com/casino/latest"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-previous"></i>
+                      <p>Tidligere spill</p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="submenu__more">
+                  <button
+                    type="button"
+                    class="btn btn-small btn-transparent js-showSubmenuItems"
+                  >
+                    View More
+                  </button>
+                </div>
+              </div>
+            </div>
+            <ul class="menu__list menu__list_sidebar">
+              <li class="menu__item">
+                <a href="https://fgfox.com/casino" class="menu__link">
+                  <svg class="svg-diamond">
+                    <use
+                      xlink:href="/img/sprite.svg?v=112128#svg-diamond"
+                    ></use>
+                  </svg>
+                  <p>Spill</p>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="https://fgfox.com/casino/live" class="menu__link">
+                  <svg class="svg-live">
+                    <use xlink:href="/img/sprite.svg?v=112128#svg-live"></use>
+                  </svg>
+                  <p>Live Casino</p>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a
+                  href="https://fgfox.com/bonuses"
+                  class="menu__link menu__link_bonus"
+                >
+                  <svg class="svg-bonus">
+                    <use xlink:href="/img/sprite.svg?v=112128#svg-bonus"></use>
+                  </svg>
+                  <p>Bonuser</p>
+                  <span class="sticker">7</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a
+                  href="https://fgfox.com/tournaments"
+                  class="menu__link menu__link_tournament"
+                >
+                  <svg class="svg-reward">
+                    <use xlink:href="/img/sprite.svg?v=112128#svg-reward"></use>
+                  </svg>
+                  <p>Turneringer</p>
+                  <span class="sticker">3</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="https://fgfox.com/vip-club" class="menu__link">
+                  <svg class="svg-crown">
+                    <use xlink:href="/img/sprite.svg?v=112128#svg-crown"></use>
+                  </svg>
+                  <p>VIP-klubb</p>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#faq" class="menu__link js-faq js-closeSidebar">
+                  <svg class="svg-chat">
+                    <use xlink:href="/img/sprite.svg?v=112128#svg-chat"></use>
+                  </svg>
+                  <p>Live chat</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="sidebar__bigBtns">
+            <div class="sidebarBigBtn js-pwaWrap" style="display: flex">
+              <button type="button" class="sidebarBigBtn__btn js-pwaBtn">
+                <div class="sidebarBigBtn__icon">
+                  <i class="icon-android"></i>
+                </div>
+                <div class="sidebarBigBtn__text">
+                  <span>Android App</span>
+                </div>
+              </button>
+            </div>
+            <div class="sidebarBigBtn">
+              <a
+                href="https://fgfox.com/modal-ios-app"
+                class="sidebarBigBtn__link"
+                rel="ajax:modal"
+              >
+                <div class="sidebarBigBtn__icon">
+                  <i class="icon-ios"></i>
+                </div>
+                <div class="sidebarBigBtn__text">
+                  <span>iOS App</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="sidebar__lang">
+            <div class="languages">
+              <div class="languages__current">
+                <svg class="svg-no">
+                  <use xlink:href="/img/lang.svg?v=34097#svg-no"></use>
+                </svg>
+                <span>Norwegian</span>
+                <i class="icon-arrow"></i>
+              </div>
+              <div class="languages__choose">
+                <a href="https://fgfox.com/lang/set/en" class="languages__link">
+                  <svg class="svg-en">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-en"></use>
+                  </svg>
+                  <span class="languages__code">en</span>
+                  <span class="languages__name">English</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/fi" class="languages__link">
+                  <svg class="svg-fi">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-fi"></use>
+                  </svg>
+                  <span class="languages__code">fi</span>
+                  <span class="languages__name">Finnish</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/pl" class="languages__link">
+                  <svg class="svg-pl">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-pl"></use>
+                  </svg>
+                  <span class="languages__code">pl</span>
+                  <span class="languages__name">Polish</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/de" class="languages__link">
+                  <svg class="svg-de">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-de"></use>
+                  </svg>
+                  <span class="languages__code">de</span>
+                  <span class="languages__name">German</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/fr" class="languages__link">
+                  <svg class="svg-fr">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-fr"></use>
+                  </svg>
+                  <span class="languages__code">fr</span>
+                  <span class="languages__name">French</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/es" class="languages__link">
+                  <svg class="svg-es">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-es"></use>
+                  </svg>
+                  <span class="languages__code">es</span>
+                  <span class="languages__name">Spanish</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/it" class="languages__link">
+                  <svg class="svg-it">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-it"></use>
+                  </svg>
+                  <span class="languages__code">it</span>
+                  <span class="languages__name">Italian</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/el" class="languages__link">
+                  <svg class="svg-el">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-el"></use>
+                  </svg>
+                  <span class="languages__code">el</span>
+                  <span class="languages__name">Greek</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/au" class="languages__link">
+                  <svg class="svg-au">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-au"></use>
+                  </svg>
+                  <span class="languages__code">au</span>
+                  <span class="languages__name">Australian</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/ca" class="languages__link">
+                  <svg class="svg-ca">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-ca"></use>
+                  </svg>
+                  <span class="languages__code">ca</span>
+                  <span class="languages__name">Canadian</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/cs" class="languages__link">
+                  <svg class="svg-cs">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-cs"></use>
+                  </svg>
+                  <span class="languages__code">cs</span>
+                  <span class="languages__name">Czech</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar__menu">
+            <ul class="sidebar__list">
+              <li class="sidebar__item">
+                <a
+                  href="https://fgfox.com/info/privacy_policy"
+                  class="sidebar__link"
+                >
+                  Personvernerklæring
+                </a>
+              </li>
+              <li class="sidebar__item">
+                <a
+                  href="https://fgfox.com/info/terms_and_conditions"
+                  class="sidebar__link"
+                >
+                  Vilkår og betingelser
+                </a>
+              </li>
+              <li class="sidebar__item green">
+                <a
+                  href="https://fgfox.com/info/contact_us"
+                  class="sidebar__link"
+                >
+                  Kontakt oss
+                </a>
+              </li>
+              <li class="sidebar__item">
+                <a
+                  href="https://fgfox.com/info/responsible_gaming"
+                  class="sidebar__link"
+                >
+                  Ansvarlig spilling
+                </a>
+              </li>
+              <li class="sidebar__item">
+                <a
+                  href="https://fgfox.com/info/about_fgfox"
+                  class="sidebar__link"
+                >
+                  Om oss
+                </a>
+              </li>
+              <div class="sidebar__item sidebar__item_faq">
+                <a href="https://fgfox.com/faq" class="sidebar__link">
+                  <span>FAQ</span>
+                </a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </aside>
+      <a href="#to-top" class="fixed__totop js-totop-fixed">
+        <i class="icon-arrow" aria-hidden="true"></i>
+      </a>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>

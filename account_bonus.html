@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Build 2.0</title>
+<!--  <link rel="shortcut icon" href="assets/img/favicons/icon-favicon.svg" type="image/svg">-->
+<!--  <link href="assets/fonts/Geometria.woff2" as="font" rel="preload" crossorigin="anonymous">-->
+<!--  <link href="assets/fonts/Geometria-Bold.woff2" as="font" rel="preload" crossorigin="anonymous">-->
+  <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+  <body class="preloaded">
+    <div class="wrapper">
+      <header class="headerAccount">
+    <div class="headerAccount__container">
+      <a href="https://fgfox.com" class="headerAccount__logo">
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="https://fgfox.com/img/app/logo-min.svg"
+          />
+          <img src="https://fgfox.com/img/app/logo.svg" alt="logo" />
+        </picture>
+      </a>
+      <button
+        type="button"
+        class="btn-icon headerAccount__link js-openSidebar"
+      >
+        <i class="icon-menu"></i>
+        <span class="sticker"></span>
+      </button>
+      <div class="headerAccount__home">
+        <a href="https://fgfox.com" class="btn">Til hoved</a>
+      </div>
+      <div class="headerAccount__lang">
+        <div class="languages">
+          <div class="languages__current">
+            <svg class="svg-no">
+              <use xlink:href="/img/lang.svg?v=34097#svg-no"></use>
+            </svg>
+            <span>Norwegian</span>
+            <i class="icon-arrow"></i>
+          </div>
+          <div class="languages__choose">
+            <a href="https://fgfox.com/lang/set/en" class="languages__link">
+              <svg class="svg-en">
+                <use xlink:href="/img/lang.svg?v=34097#svg-en"></use>
+              </svg>
+              <span class="languages__code">en</span>
+              <span class="languages__name">English</span>
+            </a>
+            <a href="https://fgfox.com/lang/set/fi" class="languages__link">
+              <svg class="svg-fi">
+                <use xlink:href="/img/lang.svg?v=34097#svg-fi"></use>
+              </svg>
+              <span class="languages__code">fi</span>
+              <span class="languages__name">Finnish</span>
+            </a>
+            <a href="https://fgfox.com/lang/set/pl" class="languages__link">
+              <svg class="svg-pl">
+                <use xlink:href="/img/lang.svg?v=34097#svg-pl"></use>
+              </svg>
+              <span class="languages__code">pl</span>
+              <span class="languages__name">Polish</span>
+            </a>
+            <a href="https://fgfox.com/lang/set/de" class="languages__link">
+              <svg class="svg-de">
+                <use xlink:href="/img/lang.svg?v=34097#svg-de"></use>
+              </svg>
+              <span class="languages__code">de</span>
+              <span class="languages__name">German</span>
+            </a>
+            <a href="https://fgfox.com/lang/set/fr" class="languages__link">
+              <svg class="svg-fr">
+                <use xlink:href="/img/lang.svg?v=34097#svg-fr"></use>
+              </svg>
+              <span class="languages__code">fr</span>
+              <span class="languages__name">French</span>
+            </a>
+            <a href="https://fgfox.com/lang/set/es" class="languages__link">
+              <svg class="svg-es">
+                <use xlink:href="/img/lang.svg?v=34097#svg-es"></use>
+              </svg>
+              <span class="languages__code">es</span>
+              <span class="languages__name">Spanish</span>
+            </a>
+            <a href="https://fgfox.com/lang/set/it" class="languages__link">
+              <svg class="svg-it">
+                <use xlink:href="/img/lang.svg?v=34097#svg-it"></use>
+              </svg>
+              <span class="languages__code">it</span>
+              <span class="languages__name">Italian</span>
+            </a>
+            <a href="https://fgfox.com/lang/set/el" class="languages__link">
+              <svg class="svg-el">
+                <use xlink:href="/img/lang.svg?v=34097#svg-el"></use>
+              </svg>
+              <span class="languages__code">el</span>
+              <span class="languages__name">Greek</span>
+            </a>
+            <a href="https://fgfox.com/lang/set/au" class="languages__link">
+              <svg class="svg-au">
+                <use xlink:href="/img/lang.svg?v=34097#svg-au"></use>
+              </svg>
+              <span class="languages__code">au</span>
+              <span class="languages__name">Australian</span>
+            </a>
+            <a href="https://fgfox.com/lang/set/ca" class="languages__link">
+              <svg class="svg-ca">
+                <use xlink:href="/img/lang.svg?v=34097#svg-ca"></use>
+              </svg>
+              <span class="languages__code">ca</span>
+              <span class="languages__name">Canadian</span>
+            </a>
+            <a href="https://fgfox.com/lang/set/cs" class="languages__link">
+              <svg class="svg-cs">
+                <use xlink:href="/img/lang.svg?v=34097#svg-cs"></use>
+              </svg>
+              <span class="languages__code">cs</span>
+              <span class="languages__name">Czech</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+      <div class="accountPage">
+        <div class="accountPage__sidebar">
+          <aside class="accountSidebar">
+            <div class="accountSidebar__profile">
+              <div class="accountSidebar__name">shaikov.egor@yandex.ru</div>
+              <div class="accountSidebar__money">€ 0.00</div>
+              <div class="accountSidebar__icon js-accountSidebar">
+                <i class="icon-lkmenu"></i>
+              </div>
+              <div class="accountSidebar__info">
+                <div class="accountSidebar__withdraw">
+                  <p>€ 0.00</p>
+                  <p>Midler tatt ut</p>
+                </div>
+                <div class="accountSidebar__locked">
+                  <p>0</p>
+                  <p>Bonuser i kø</p>
+                </div>
+              </div>
+              <div class="accountSidebar__btn">
+                <a href="https://fgfox.com/account/deposit" class="btn"
+                  >Innskudd</a
+                >
+              </div>
+              <div class="accountSidebar__toggler js-accountSidebar"></div>
+            </div>
+            <div class="accountSidebar__menu">
+              <a href="https://fgfox.com/account/promo" class="">
+                <i class="icon-promo"></i>
+                <span>Promo</span>
+              </a>
+              <a href="https://fgfox.com/account/profile" class="">
+                <i class="icon-profile"></i>
+                <span>Profil</span>
+              </a>
+              <a href="https://fgfox.com/account/wallet" class="">
+                <i class="icon-wallet"></i>
+                <span>Lommebok</span>
+              </a>
+              <a href="https://fgfox.com/account/bonuses" class="active">
+                <i class="icon-bonus"></i>
+                <span>Bonus</span>
+              </a>
+              <a href="https://fgfox.com/account/history" class="">
+                <i class="icon-game"></i>
+                <span>Spillhistorie</span>
+              </a>
+              <a href="https://fgfox.com/logout">
+                <i class="icon-logout"></i>
+                <span>Exit</span>
+              </a>
+            </div>
+          </aside>
+        </div>
+        <main class="accountPage__main">
+          <div class="accountPage__title">Bonus</div>
+          <div class="accountPage__content">
+            <div class="accountBonus">
+              <div class="accountBonus__bonusBalance">
+                <div class="bonusBalance">
+                  <div class="bonusBalance__title">Bonuskonto</div>
+                  <div class="bonusBalance__grid">
+                    <div class="bonusBalanceCard">
+                      <div class="bonusBalanceCard__title">Kasino</div>
+                      <div class="bonusBalanceCard__empty">
+                        For øyeblikket har du ingen aktive bonusmidler.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accountBonus__bonusQueues">
+                <div id="bonus-content">
+                  <div class="tableBuilder js-table">
+                    <div class="tableBuilder__title">Casino bonus kø:</div>
+                    <div class="tableBuilder__filter">
+                      <form
+                        action=""
+                        class="tableBuilderFilter js-table-form"
+                        siq_id="autopick_4807"
+                      >
+                        <input type="hidden" name="page" value="1" />
+                        <div class="tableBuilderFilter__submit"></div>
+                      </form>
+                    </div>
+                    <div class="tableBuilder__grid js-table-grid">
+                      <div class="tableBuilder__responsive">
+                        <div class="tableBuilder__table">
+                          <div class="tableBuilder__head">
+                            <div class="tableBuilder__row">
+                              <div class="tableBuilder__col">
+                                En type / Navn
+                              </div>
+                              <div class="tableBuilder__col">Sum</div>
+                              <div class="tableBuilder__col">Max. bet</div>
+                              <div class="tableBuilder__col">Wager</div>
+                              <div class="tableBuilder__col">Dato</div>
+                              <div class="tableBuilder__col"></div>
+                            </div>
+                          </div>
+                          <div class="tableBuilder__empty">
+                            Ingen bonuser funnet i køen
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tableBuilder__pagination"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accountBonus__freespinGames">
+                <div class="freespinGames">
+                  <div class="freespinGames__info">
+                    <div class="freespinGames__title">Gratisspinn</div>
+                    <div class="freespinGames__list">
+                      <div class="freespinGames__item">
+                        <p>Antall gratisspinn:</p>
+                        <p><span>0</span></p>
+                      </div>
+                      <div class="freespinGames__item">
+                        <p>Gratisspinn brukergrense per dag:</p>
+                        <p><span>--</span></p>
+                      </div>
+                      <div class="freespinGames__item">
+                        <p>Gratisspinn innsatsbeløp:</p>
+                        <p><span>€ 0.00</span></p>
+                      </div>
+                      <div class="freespinGames__item">
+                        <p>Gratisspinn-saldo for gjeldende dag:</p>
+                        <p><span>--</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="freespinGames__games">
+                    <div class="freespinGames__title">Gratisspinn-spill</div>
+                    <div class="freespinGames__grid">
+                      <div class="gameCard">
+                        <div class="gameCard__inner">
+                          <div class="gameCard__img">
+                            <img
+                              data-src="https://9fb6803d.gcdn.easyrocket.net/storage/games/vertically/2/edefae3731614d97e740aaaf1a22f271de9e3a0f.png"
+                              class="lazy entered loaded"
+                              alt="Midas Golden Touch Mobile"
+                              data-ll-status="loaded"
+                              src="https://9fb6803d.gcdn.easyrocket.net/storage/games/vertically/2/edefae3731614d97e740aaaf1a22f271de9e3a0f.png"
+                            />
+                          </div>
+                          <div class="cardTag cardTag_popular">
+                            <span>Top</span>
+                          </div>
+                          <div class="gameCard__wagering">
+                            <svg class="svg-bonus_sticker">
+                              <use
+                                xlink:href="/img/sprite.svg?v=112128#svg-bonus_sticker"
+                              ></use>
+                            </svg>
+                          </div>
+                          <div class="gameCard__hover logged demo">
+                            <button
+                              type="button"
+                              class="gameCard__favorite js-game-favorite"
+                              data-game_id="3531"
+                              data-text_add="Legg til i favoritter"
+                              data-text_remove="Fjern fra favoritter"
+                              title="Legg til i favoritter"
+                            >
+                              <i class="icon-star" aria-hidden="true"></i>
+                            </button>
+                            <a
+                              href="https://fgfox.com/games/show/3531"
+                              class="gameCard__play"
+                            >
+                              <i class="icon-play"></i>
+                            </a>
+                            <a
+                              href="https://fgfox.com/games/show/3531/demo"
+                              class="gameCard__demo"
+                            >
+                              <span>Spill gratis</span>
+                            </a>
+                          </div>
+                        </div>
+                        <div
+                          class="gameCard__info"
+                          title="Midas Golden Touch Mobile"
+                        >
+                          <div class="gameCard__name">
+                            Midas Golden Touch Mobile
+                          </div>
+                          <div class="gameCard__provider">Thunderkick</div>
+                        </div>
+                      </div>
+                      <div class="gameCard">
+                        <div class="gameCard__inner">
+                          <div class="gameCard__img">
+                            <img
+                              data-src="https://9fb6803d.gcdn.easyrocket.net/storage/games/vertically/2/413f9d2feca4f7236043b274c89f19f9e76f5b97.png"
+                              class="lazy entered loaded"
+                              alt="Crystal Quest: Arcane Tower Mobile"
+                              data-ll-status="loaded"
+                              src="https://9fb6803d.gcdn.easyrocket.net/storage/games/vertically/2/413f9d2feca4f7236043b274c89f19f9e76f5b97.png"
+                            />
+                          </div>
+                          <div class="gameCard__wagering">
+                            <svg class="svg-bonus_sticker">
+                              <use
+                                xlink:href="/img/sprite.svg?v=112128#svg-bonus_sticker"
+                              ></use>
+                            </svg>
+                          </div>
+                          <div class="gameCard__hover logged demo">
+                            <button
+                              type="button"
+                              class="gameCard__favorite js-game-favorite"
+                              data-game_id="5690"
+                              data-text_add="Legg til i favoritter"
+                              data-text_remove="Fjern fra favoritter"
+                              title="Legg til i favoritter"
+                            >
+                              <i class="icon-star" aria-hidden="true"></i>
+                            </button>
+                            <a
+                              href="https://fgfox.com/games/show/5690"
+                              class="gameCard__play"
+                            >
+                              <i class="icon-play"></i>
+                            </a>
+                            <a
+                              href="https://fgfox.com/games/show/5690/demo"
+                              class="gameCard__demo"
+                            >
+                              <span>Spill gratis</span>
+                            </a>
+                          </div>
+                        </div>
+                        <div
+                          class="gameCard__info"
+                          title="Crystal Quest: Arcane Tower Mobile"
+                        >
+                          <div class="gameCard__name">
+                            Crystal Quest: Arcane Tower Mobile
+                          </div>
+                          <div class="gameCard__provider">Thunderkick</div>
+                        </div>
+                      </div>
+                      <div class="gameCard">
+                        <div class="gameCard__inner">
+                          <div class="gameCard__img">
+                            <img
+                              data-src="https://9fb6803d.gcdn.easyrocket.net/storage/games/vertically/2/091ee8da3a0725eccb45645a5a67ebbc0239208c.png"
+                              class="lazy entered loaded"
+                              alt="Spectra Mobile"
+                              data-ll-status="loaded"
+                              src="https://9fb6803d.gcdn.easyrocket.net/storage/games/vertically/2/091ee8da3a0725eccb45645a5a67ebbc0239208c.png"
+                            />
+                          </div>
+                          <div class="gameCard__wagering">
+                            <svg class="svg-bonus_sticker">
+                              <use
+                                xlink:href="/img/sprite.svg?v=112128#svg-bonus_sticker"
+                              ></use>
+                            </svg>
+                          </div>
+                          <div class="gameCard__hover logged demo">
+                            <button
+                              type="button"
+                              class="gameCard__favorite js-game-favorite"
+                              data-game_id="3507"
+                              data-text_add="Legg til i favoritter"
+                              data-text_remove="Fjern fra favoritter"
+                              title="Legg til i favoritter"
+                            >
+                              <i class="icon-star" aria-hidden="true"></i>
+                            </button>
+                            <a
+                              href="https://fgfox.com/games/show/3507"
+                              class="gameCard__play"
+                            >
+                              <i class="icon-play"></i>
+                            </a>
+                            <a
+                              href="https://fgfox.com/games/show/3507/demo"
+                              class="gameCard__demo"
+                            >
+                              <span>Spill gratis</span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="gameCard__info" title="Spectra Mobile">
+                          <div class="gameCard__name">Spectra Mobile</div>
+                          <div class="gameCard__provider">Thunderkick</div>
+                        </div>
+                      </div>
+                      <div class="gameCard">
+                        <div class="gameCard__inner">
+                          <div class="gameCard__img">
+                            <img
+                              data-src="https://9fb6803d.gcdn.easyrocket.net/storage/games/vertically/2/b9b649f92d2e0ad380c2c71948ae9fd719bdff8f.png"
+                              class="lazy entered loaded"
+                              alt="777 Gems: Respin"
+                              data-ll-status="loaded"
+                              src="https://9fb6803d.gcdn.easyrocket.net/storage/games/vertically/2/b9b649f92d2e0ad380c2c71948ae9fd719bdff8f.png"
+                            />
+                          </div>
+                          <div class="cardTag cardTag_popular">
+                            <span>Top</span>
+                          </div>
+                          <div class="gameCard__wagering">
+                            <svg class="svg-bonus_sticker">
+                              <use
+                                xlink:href="/img/sprite.svg?v=112128#svg-bonus_sticker"
+                              ></use>
+                            </svg>
+                          </div>
+                          <div class="gameCard__hover logged demo">
+                            <button
+                              type="button"
+                              class="gameCard__favorite js-game-favorite"
+                              data-game_id="3362"
+                              data-text_add="Legg til i favoritter"
+                              data-text_remove="Fjern fra favoritter"
+                              title="Legg til i favoritter"
+                            >
+                              <i class="icon-star" aria-hidden="true"></i>
+                            </button>
+                            <a
+                              href="https://fgfox.com/games/show/3362"
+                              class="gameCard__play"
+                            >
+                              <i class="icon-play"></i>
+                            </a>
+                            <a
+                              href="https://fgfox.com/games/show/3362/demo"
+                              class="gameCard__demo"
+                            >
+                              <span>Spill gratis</span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="gameCard__info" title="777 Gems: Respin">
+                          <div class="gameCard__name">777 Gems: Respin</div>
+                          <div class="gameCard__provider">Booongo</div>
+                        </div>
+                      </div>
+                      <div class="gameCard">
+                        <div class="gameCard__inner">
+                          <div class="gameCard__img">
+                            <img
+                              data-src="https://9fb6803d.gcdn.easyrocket.net/storage/games/vertically/2/10acf0d52646597a6ac89a03fa7166562b176f86.png"
+                              class="lazy entered loaded"
+                              alt="Flame Busters Mobile"
+                              data-ll-status="loaded"
+                              src="https://9fb6803d.gcdn.easyrocket.net/storage/games/vertically/2/10acf0d52646597a6ac89a03fa7166562b176f86.png"
+                            />
+                          </div>
+                          <div class="gameCard__wagering">
+                            <svg class="svg-bonus_sticker">
+                              <use
+                                xlink:href="/img/sprite.svg?v=112128#svg-bonus_sticker"
+                              ></use>
+                            </svg>
+                          </div>
+                          <div class="gameCard__hover logged demo">
+                            <button
+                              type="button"
+                              class="gameCard__favorite js-game-favorite"
+                              data-game_id="3485"
+                              data-text_add="Legg til i favoritter"
+                              data-text_remove="Fjern fra favoritter"
+                              title="Legg til i favoritter"
+                            >
+                              <i class="icon-star" aria-hidden="true"></i>
+                            </button>
+                            <a
+                              href="https://fgfox.com/games/show/3485"
+                              class="gameCard__play"
+                            >
+                              <i class="icon-play"></i>
+                            </a>
+                            <a
+                              href="https://fgfox.com/games/show/3485/demo"
+                              class="gameCard__demo"
+                            >
+                              <span>Spill gratis</span>
+                            </a>
+                          </div>
+                        </div>
+                        <div
+                          class="gameCard__info"
+                          title="Flame Busters Mobile"
+                        >
+                          <div class="gameCard__name">Flame Busters Mobile</div>
+                          <div class="gameCard__provider">Thunderkick</div>
+                        </div>
+                      </div>
+                      <div class="gameCard">
+                        <div class="gameCard__inner">
+                          <div class="gameCard__img">
+                            <img
+                              data-src="https://9fb6803d.gcdn.easyrocket.net/storage/games/vertically/2/56b31c4a471f6e4143e584c2f0469e0cb56add80.jpg"
+                              class="lazy entered loaded"
+                              alt="777 gems"
+                              data-ll-status="loaded"
+                              src="https://9fb6803d.gcdn.easyrocket.net/storage/games/vertically/2/56b31c4a471f6e4143e584c2f0469e0cb56add80.jpg"
+                            />
+                          </div>
+                          <div class="gameCard__wagering">
+                            <svg class="svg-bonus_sticker">
+                              <use
+                                xlink:href="/img/sprite.svg?v=112128#svg-bonus_sticker"
+                              ></use>
+                            </svg>
+                          </div>
+                          <div class="gameCard__hover logged demo">
+                            <button
+                              type="button"
+                              class="gameCard__favorite js-game-favorite"
+                              data-game_id="2835"
+                              data-text_add="Legg til i favoritter"
+                              data-text_remove="Fjern fra favoritter"
+                              title="Legg til i favoritter"
+                            >
+                              <i class="icon-star" aria-hidden="true"></i>
+                            </button>
+                            <a
+                              href="https://fgfox.com/games/show/2835"
+                              class="gameCard__play"
+                            >
+                              <i class="icon-play"></i>
+                            </a>
+                            <a
+                              href="https://fgfox.com/games/show/2835/demo"
+                              class="gameCard__demo"
+                            >
+                              <span>Spill gratis</span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="gameCard__info" title="777 gems">
+                          <div class="gameCard__name">777 gems</div>
+                          <div class="gameCard__provider">Booongo</div>
+                        </div>
+                      </div>
+                      <div class="gameCard">
+                        <div class="gameCard__inner">
+                          <div class="gameCard__img">
+                            <img
+                              data-src="https://9fb6803d.gcdn.easyrocket.net/storage/games/vertically/2/2994399165b7d63385fc4b75a173bdaf76eb7c88.png"
+                              class="lazy entered loaded"
+                              alt="Wild Burning Wins: 5 lines Mobile"
+                              data-ll-status="loaded"
+                              src="https://9fb6803d.gcdn.easyrocket.net/storage/games/vertically/2/2994399165b7d63385fc4b75a173bdaf76eb7c88.png"
+                            />
+                          </div>
+                          <div class="gameCard__wagering">
+                            <svg class="svg-bonus_sticker">
+                              <use
+                                xlink:href="/img/sprite.svg?v=112128#svg-bonus_sticker"
+                              ></use>
+                            </svg>
+                          </div>
+                          <div class="gameCard__hover logged demo">
+                            <button
+                              type="button"
+                              class="gameCard__favorite js-game-favorite"
+                              data-game_id="3155"
+                              data-text_add="Legg til i favoritter"
+                              data-text_remove="Fjern fra favoritter"
+                              title="Legg til i favoritter"
+                            >
+                              <i class="icon-star" aria-hidden="true"></i>
+                            </button>
+                            <a
+                              href="https://fgfox.com/games/show/3155"
+                              class="gameCard__play"
+                            >
+                              <i class="icon-play"></i>
+                            </a>
+                            <a
+                              href="https://fgfox.com/games/show/3155/demo"
+                              class="gameCard__demo"
+                            >
+                              <span>Spill gratis</span>
+                            </a>
+                          </div>
+                        </div>
+                        <div
+                          class="gameCard__info"
+                          title="Wild Burning Wins: 5 lines Mobile"
+                        >
+                          <div class="gameCard__name">
+                            Wild Burning Wins: 5 lines Mobile
+                          </div>
+                          <div class="gameCard__provider">Playson</div>
+                        </div>
+                      </div>
+                      <div class="gameCard">
+                        <div class="gameCard__inner">
+                          <div class="gameCard__img">
+                            <img
+                              data-src="https://9fb6803d.gcdn.easyrocket.net/storage/games/vertically/0/fruit_vegas.jpg"
+                              class="lazy entered loaded"
+                              alt="Fruit Vegas"
+                              data-ll-status="loaded"
+                              src="https://9fb6803d.gcdn.easyrocket.net/storage/games/vertically/0/fruit_vegas.jpg"
+                            />
+                          </div>
+                          <div class="gameCard__wagering">
+                            <svg class="svg-bonus_sticker">
+                              <use
+                                xlink:href="/img/sprite.svg?v=112128#svg-bonus_sticker"
+                              ></use>
+                            </svg>
+                          </div>
+                          <div class="gameCard__hover logged demo">
+                            <button
+                              type="button"
+                              class="gameCard__favorite js-game-favorite"
+                              data-game_id="574"
+                              data-text_add="Legg til i favoritter"
+                              data-text_remove="Fjern fra favoritter"
+                              title="Legg til i favoritter"
+                            >
+                              <i class="icon-star" aria-hidden="true"></i>
+                            </button>
+                            <a
+                              href="https://fgfox.com/games/show/574"
+                              class="gameCard__play"
+                            >
+                              <i class="icon-play"></i>
+                            </a>
+                            <a
+                              href="https://fgfox.com/games/show/574/demo"
+                              class="gameCard__demo"
+                            >
+                              <span>Spill gratis</span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="gameCard__info" title="Fruit Vegas">
+                          <div class="gameCard__name">Fruit Vegas</div>
+                          <div class="gameCard__provider">Mascot</div>
+                        </div>
+                      </div>
+                      <div class="gameCard">
+                        <div class="gameCard__inner">
+                          <div class="gameCard__img">
+                            <img
+                              data-src="https://9fb6803d.gcdn.easyrocket.net/storage/games/vertically/2/5d31749f2fb3d3e2deb7590fb020a0ac8855378e.png"
+                              class="lazy entered loaded"
+                              alt="3 Coins"
+                              data-ll-status="loaded"
+                              src="https://9fb6803d.gcdn.easyrocket.net/storage/games/vertically/2/5d31749f2fb3d3e2deb7590fb020a0ac8855378e.png"
+                            />
+                          </div>
+                          <div class="cardTag cardTag_popular">
+                            <span>Top</span>
+                          </div>
+                          <div class="gameCard__wagering">
+                            <svg class="svg-bonus_sticker">
+                              <use
+                                xlink:href="/img/sprite.svg?v=112128#svg-bonus_sticker"
+                              ></use>
+                            </svg>
+                          </div>
+                          <div class="gameCard__hover logged demo">
+                            <button
+                              type="button"
+                              class="gameCard__favorite js-game-favorite"
+                              data-game_id="5880"
+                              data-text_add="Legg til i favoritter"
+                              data-text_remove="Fjern fra favoritter"
+                              title="Legg til i favoritter"
+                            >
+                              <i class="icon-star" aria-hidden="true"></i>
+                            </button>
+                            <a
+                              href="https://fgfox.com/games/show/5880"
+                              class="gameCard__play"
+                            >
+                              <i class="icon-play"></i>
+                            </a>
+                            <a
+                              href="https://fgfox.com/games/show/5880/demo"
+                              class="gameCard__demo"
+                            >
+                              <span>Spill gratis</span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="gameCard__info" title="3 Coins">
+                          <div class="gameCard__name">3 Coins</div>
+                          <div class="gameCard__provider">Booongo</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accountBonus__promocode">
+                <div id="promocodeWidget" class="promocodeWidget">
+                  <div class="promocodeWidget__title">Kampanjekode</div>
+                  <form
+                    action="https://fgfox.com/bonuses/promocode"
+                    data-return_type="json"
+                    method="post"
+                    class="promocodeWidget__form js-promo-form"
+                    siq_id="autopick_2511"
+                  >
+                    <input
+                      type="hidden"
+                      name="_token"
+                      value="no4rw0NXavMCxncpS3l3Mni5oFE36Lf3yJhgcKK0"
+                    />
+                    <div class="promocodeWidget__text">
+                      <p>Promo</p>
+                      <p>Skriv inn kampanjekode</p>
+                      <p>Én kampanjekode kan kun brukes én gang!</p>
+                    </div>
+                    <div class="input">
+                      <input
+                        type="text"
+                        name="promocode"
+                        value=""
+                        placeholder="Skriv inn kampanjekode"
+                        required=""
+                        inputmode="text"
+                      />
+                    </div>
+                    <div class="promocodeWidget__submit">
+                      <button type="submit" class="btn btn-transparent">Aktiver</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <aside class="sidebar">
+        <div class="sidebar__overlay js-closeSidebar"></div>
+        <div class="sidebar__content">
+          <div class="sidebar__close js-closeSidebar">
+            <i class="icon-close2"></i>
+          </div>
+          <div class="sidebar__top">
+            <a href="https://fgfox.com" class="sidebar__logo">
+              <img src="https://fgfox.com/img/app/logo.svg" alt="logo" />
+            </a>
+            <div class="sidebar__btns sidebar__btns_logged">
+              <div class="sidebar__deposit">
+                <a
+                  href="https://fgfox.com/account/deposit/deposit-modal"
+                  class="btn"
+                  rel="ajax:modal"
+                >
+                  Innskudd € 0.00
+                </a>
+              </div>
+            </div>
+          </div>
+          <nav class="sidebar__menu">
+            <ul class="menu__list menu__list_header">
+              <li class="menu__item">
+                <a href="https://fgfox.com/casino" class="menu__link">
+                  Alle spill
+                </a>
+              </li>
+              <li class="menu__item">
+                <a
+                  href="https://fgfox.com/bonuses"
+                  class="menu__link menu__link_bonus"
+                >
+                  Bonuser
+                  <span class="sticker">7</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a
+                  href="https://fgfox.com/tournaments"
+                  class="menu__link menu__link_tournament"
+                >
+                  <p>Turneringer</p>
+                  <span class="sticker">3</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a
+                  href="https://fgfox.com/vip-club"
+                  class="menu__link menu__link_blink"
+                >
+                  VIP-klubb
+                </a>
+              </li>
+            </ul>
+            <div class="menuCategories">
+              <a
+                href="#categories"
+                class="menu__link menu__link_submenu js-activeSubmenu active"
+              >
+                <span>Spillkategorier</span>
+                <i class="icon-arrow"></i>
+                <span class="sticker"></span>
+              </a>
+              <div class="submenu" style="display: block">
+                <ul class="submenu__list">
+                  <li class="submenu__item">
+                    <a
+                      href="https://fgfox.com/casino/top"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-top"></i>
+                      <p>Top spill</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a
+                      href="https://fgfox.com/casino/new"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-new"></i>
+                      <p>Ny</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a
+                      href="https://fgfox.com/casino/jackpot"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-jackpots"></i>
+                      <p>Jackpotter</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a
+                      href="https://fgfox.com/casino/live"
+                      class="submenu__link js-filterGames-categoryItem live"
+                    >
+                      <i class="icon-live2"></i>
+                      <p>Live</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a
+                      href="https://fgfox.com/casino/megaways"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-megaways"></i>
+                      <p>MEGAWAYS</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a
+                      href="https://fgfox.com/casino/drops_win"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-drops_win"></i>
+                      <p>Drops&amp;Wins</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item" style="display: none">
+                    <a
+                      href="https://fgfox.com/casino/book"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-book"></i>
+                      <p>Book</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item" style="display: none">
+                    <a
+                      href="https://fgfox.com/casino/bonus_games"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-bonus_games"></i>
+                      <p>Bonusspill</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item" style="display: none">
+                    <a
+                      href="https://fgfox.com/casino/slots"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-slots"></i>
+                      <p>Spilleautomater</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item" style="display: none">
+                    <a
+                      href="https://fgfox.com/casino/roulette"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-roulette"></i>
+                      <p>Rulett</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item" style="display: none">
+                    <a
+                      href="https://fgfox.com/casino/favorites"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-favorites"></i>
+                      <p>Favoritter</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item" style="display: none">
+                    <a
+                      href="https://fgfox.com/casino/latest"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-previous"></i>
+                      <p>Tidligere spill</p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="submenu__more">
+                  <button
+                    type="button"
+                    class="btn btn-small btn-transparent js-showSubmenuItems"
+                  >
+                    View More
+                  </button>
+                </div>
+              </div>
+            </div>
+            <ul class="menu__list menu__list_sidebar">
+              <li class="menu__item">
+                <a href="https://fgfox.com/casino" class="menu__link">
+                  <svg class="svg-diamond">
+                    <use
+                      xlink:href="/img/sprite.svg?v=112128#svg-diamond"
+                    ></use>
+                  </svg>
+                  <p>Spill</p>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="https://fgfox.com/casino/live" class="menu__link">
+                  <svg class="svg-live">
+                    <use xlink:href="/img/sprite.svg?v=112128#svg-live"></use>
+                  </svg>
+                  <p>Live Casino</p>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a
+                  href="https://fgfox.com/bonuses"
+                  class="menu__link menu__link_bonus"
+                >
+                  <svg class="svg-bonus">
+                    <use xlink:href="/img/sprite.svg?v=112128#svg-bonus"></use>
+                  </svg>
+                  <p>Bonuser</p>
+                  <span class="sticker">7</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a
+                  href="https://fgfox.com/tournaments"
+                  class="menu__link menu__link_tournament"
+                >
+                  <svg class="svg-reward">
+                    <use xlink:href="/img/sprite.svg?v=112128#svg-reward"></use>
+                  </svg>
+                  <p>Turneringer</p>
+                  <span class="sticker">3</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="https://fgfox.com/vip-club" class="menu__link">
+                  <svg class="svg-crown">
+                    <use xlink:href="/img/sprite.svg?v=112128#svg-crown"></use>
+                  </svg>
+                  <p>VIP-klubb</p>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#faq" class="menu__link js-faq js-closeSidebar">
+                  <svg class="svg-chat">
+                    <use xlink:href="/img/sprite.svg?v=112128#svg-chat"></use>
+                  </svg>
+                  <p>Live chat</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="sidebar__bigBtns">
+            <div class="sidebarBigBtn js-pwaWrap" style="display: flex">
+              <button type="button" class="sidebarBigBtn__btn js-pwaBtn">
+                <div class="sidebarBigBtn__icon">
+                  <i class="icon-android"></i>
+                </div>
+                <div class="sidebarBigBtn__text">
+                  <span>Android App</span>
+                </div>
+              </button>
+            </div>
+            <div class="sidebarBigBtn">
+              <a
+                href="https://fgfox.com/modal-ios-app"
+                class="sidebarBigBtn__link"
+                rel="ajax:modal"
+              >
+                <div class="sidebarBigBtn__icon">
+                  <i class="icon-ios"></i>
+                </div>
+                <div class="sidebarBigBtn__text">
+                  <span>iOS App</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="sidebar__lang">
+            <div class="languages">
+              <div class="languages__current">
+                <svg class="svg-no">
+                  <use xlink:href="/img/lang.svg?v=34097#svg-no"></use>
+                </svg>
+                <span>Norwegian</span>
+                <i class="icon-arrow"></i>
+              </div>
+              <div class="languages__choose">
+                <a href="https://fgfox.com/lang/set/en" class="languages__link">
+                  <svg class="svg-en">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-en"></use>
+                  </svg>
+                  <span class="languages__code">en</span>
+                  <span class="languages__name">English</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/fi" class="languages__link">
+                  <svg class="svg-fi">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-fi"></use>
+                  </svg>
+                  <span class="languages__code">fi</span>
+                  <span class="languages__name">Finnish</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/pl" class="languages__link">
+                  <svg class="svg-pl">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-pl"></use>
+                  </svg>
+                  <span class="languages__code">pl</span>
+                  <span class="languages__name">Polish</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/de" class="languages__link">
+                  <svg class="svg-de">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-de"></use>
+                  </svg>
+                  <span class="languages__code">de</span>
+                  <span class="languages__name">German</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/fr" class="languages__link">
+                  <svg class="svg-fr">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-fr"></use>
+                  </svg>
+                  <span class="languages__code">fr</span>
+                  <span class="languages__name">French</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/es" class="languages__link">
+                  <svg class="svg-es">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-es"></use>
+                  </svg>
+                  <span class="languages__code">es</span>
+                  <span class="languages__name">Spanish</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/it" class="languages__link">
+                  <svg class="svg-it">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-it"></use>
+                  </svg>
+                  <span class="languages__code">it</span>
+                  <span class="languages__name">Italian</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/el" class="languages__link">
+                  <svg class="svg-el">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-el"></use>
+                  </svg>
+                  <span class="languages__code">el</span>
+                  <span class="languages__name">Greek</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/au" class="languages__link">
+                  <svg class="svg-au">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-au"></use>
+                  </svg>
+                  <span class="languages__code">au</span>
+                  <span class="languages__name">Australian</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/ca" class="languages__link">
+                  <svg class="svg-ca">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-ca"></use>
+                  </svg>
+                  <span class="languages__code">ca</span>
+                  <span class="languages__name">Canadian</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/cs" class="languages__link">
+                  <svg class="svg-cs">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-cs"></use>
+                  </svg>
+                  <span class="languages__code">cs</span>
+                  <span class="languages__name">Czech</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar__menu">
+            <ul class="sidebar__list">
+              <li class="sidebar__item">
+                <a
+                  href="https://fgfox.com/info/privacy_policy"
+                  class="sidebar__link"
+                >
+                  Personvernerklæring
+                </a>
+              </li>
+              <li class="sidebar__item">
+                <a
+                  href="https://fgfox.com/info/terms_and_conditions"
+                  class="sidebar__link"
+                >
+                  Vilkår og betingelser
+                </a>
+              </li>
+              <li class="sidebar__item green">
+                <a
+                  href="https://fgfox.com/info/contact_us"
+                  class="sidebar__link"
+                >
+                  Kontakt oss
+                </a>
+              </li>
+              <li class="sidebar__item">
+                <a
+                  href="https://fgfox.com/info/responsible_gaming"
+                  class="sidebar__link"
+                >
+                  Ansvarlig spilling
+                </a>
+              </li>
+              <li class="sidebar__item">
+                <a
+                  href="https://fgfox.com/info/about_fgfox"
+                  class="sidebar__link"
+                >
+                  Om oss
+                </a>
+              </li>
+              <div class="sidebar__item sidebar__item_faq">
+                <a href="https://fgfox.com/faq" class="sidebar__link">
+                  <span>FAQ</span>
+                </a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </aside>
+      <a href="#to-top" class="fixed__totop js-totop-fixed">
+        <i class="icon-arrow" aria-hidden="true"></i>
+      </a>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>

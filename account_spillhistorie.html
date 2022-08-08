@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Build 2.0</title>
+<!--  <link rel="shortcut icon" href="assets/img/favicons/icon-favicon.svg" type="image/svg">-->
+<!--  <link href="assets/fonts/Geometria.woff2" as="font" rel="preload" crossorigin="anonymous">-->
+<!--  <link href="assets/fonts/Geometria-Bold.woff2" as="font" rel="preload" crossorigin="anonymous">-->
+  <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+  <body>
+    <div class="wrapper">
+      <header class="headerAccount">
+    <div class="headerAccount__container">
+      <a href="https://fgfox.com" class="headerAccount__logo">
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="https://fgfox.com/img/app/logo-min.svg"
+          />
+          <img src="https://fgfox.com/img/app/logo.svg" alt="logo" />
+        </picture>
+      </a>
+      <button
+        type="button"
+        class="btn-icon headerAccount__link js-openSidebar"
+      >
+        <i class="icon-menu"></i>
+        <span class="sticker"></span>
+      </button>
+      <div class="headerAccount__home">
+        <a href="https://fgfox.com" class="btn">Til hoved</a>
+      </div>
+      <div class="headerAccount__lang">
+        <div class="languages">
+          <div class="languages__current">
+            <svg class="svg-no">
+              <use xlink:href="/img/lang.svg?v=34097#svg-no"></use>
+            </svg>
+            <span>Norwegian</span>
+            <i class="icon-arrow"></i>
+          </div>
+          <div class="languages__choose">
+            <a href="https://fgfox.com/lang/set/en" class="languages__link">
+              <svg class="svg-en">
+                <use xlink:href="/img/lang.svg?v=34097#svg-en"></use>
+              </svg>
+              <span class="languages__code">en</span>
+              <span class="languages__name">English</span>
+            </a>
+            <a href="https://fgfox.com/lang/set/fi" class="languages__link">
+              <svg class="svg-fi">
+                <use xlink:href="/img/lang.svg?v=34097#svg-fi"></use>
+              </svg>
+              <span class="languages__code">fi</span>
+              <span class="languages__name">Finnish</span>
+            </a>
+            <a href="https://fgfox.com/lang/set/pl" class="languages__link">
+              <svg class="svg-pl">
+                <use xlink:href="/img/lang.svg?v=34097#svg-pl"></use>
+              </svg>
+              <span class="languages__code">pl</span>
+              <span class="languages__name">Polish</span>
+            </a>
+            <a href="https://fgfox.com/lang/set/de" class="languages__link">
+              <svg class="svg-de">
+                <use xlink:href="/img/lang.svg?v=34097#svg-de"></use>
+              </svg>
+              <span class="languages__code">de</span>
+              <span class="languages__name">German</span>
+            </a>
+            <a href="https://fgfox.com/lang/set/fr" class="languages__link">
+              <svg class="svg-fr">
+                <use xlink:href="/img/lang.svg?v=34097#svg-fr"></use>
+              </svg>
+              <span class="languages__code">fr</span>
+              <span class="languages__name">French</span>
+            </a>
+            <a href="https://fgfox.com/lang/set/es" class="languages__link">
+              <svg class="svg-es">
+                <use xlink:href="/img/lang.svg?v=34097#svg-es"></use>
+              </svg>
+              <span class="languages__code">es</span>
+              <span class="languages__name">Spanish</span>
+            </a>
+            <a href="https://fgfox.com/lang/set/it" class="languages__link">
+              <svg class="svg-it">
+                <use xlink:href="/img/lang.svg?v=34097#svg-it"></use>
+              </svg>
+              <span class="languages__code">it</span>
+              <span class="languages__name">Italian</span>
+            </a>
+            <a href="https://fgfox.com/lang/set/el" class="languages__link">
+              <svg class="svg-el">
+                <use xlink:href="/img/lang.svg?v=34097#svg-el"></use>
+              </svg>
+              <span class="languages__code">el</span>
+              <span class="languages__name">Greek</span>
+            </a>
+            <a href="https://fgfox.com/lang/set/au" class="languages__link">
+              <svg class="svg-au">
+                <use xlink:href="/img/lang.svg?v=34097#svg-au"></use>
+              </svg>
+              <span class="languages__code">au</span>
+              <span class="languages__name">Australian</span>
+            </a>
+            <a href="https://fgfox.com/lang/set/ca" class="languages__link">
+              <svg class="svg-ca">
+                <use xlink:href="/img/lang.svg?v=34097#svg-ca"></use>
+              </svg>
+              <span class="languages__code">ca</span>
+              <span class="languages__name">Canadian</span>
+            </a>
+            <a href="https://fgfox.com/lang/set/cs" class="languages__link">
+              <svg class="svg-cs">
+                <use xlink:href="/img/lang.svg?v=34097#svg-cs"></use>
+              </svg>
+              <span class="languages__code">cs</span>
+              <span class="languages__name">Czech</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+      <div class="accountPage">
+        <div class="accountPage__sidebar">
+          <aside class="accountSidebar">
+            <div class="accountSidebar__profile">
+              <div class="accountSidebar__name">shaikov.egor@yandex.ru</div>
+              <div class="accountSidebar__money">€ 0.00</div>
+              <div class="accountSidebar__icon js-accountSidebar">
+                <i class="icon-lkmenu"></i>
+              </div>
+              <div class="accountSidebar__info">
+                <div class="accountSidebar__withdraw">
+                  <p>€ 0.00</p>
+                  <p>Midler tatt ut</p>
+                </div>
+                <div class="accountSidebar__locked">
+                  <p>0</p>
+                  <p>Bonuser i kø</p>
+                </div>
+              </div>
+              <div class="accountSidebar__btn">
+                <a href="https://fgfox.com/account/deposit" class="btn"
+                  >Innskudd</a
+                >
+              </div>
+              <div class="accountSidebar__toggler js-accountSidebar"></div>
+            </div>
+            <div class="accountSidebar__menu">
+              <a href="https://fgfox.com/account/promo" class="">
+                <i class="icon-promo"></i>
+                <span>Promo</span>
+              </a>
+              <a href="https://fgfox.com/account/profile" class="">
+                <i class="icon-profile"></i>
+                <span>Profil</span>
+              </a>
+              <a href="https://fgfox.com/account/wallet" class="">
+                <i class="icon-wallet"></i>
+                <span>Lommebok</span>
+              </a>
+              <a href="https://fgfox.com/account/bonuses" class="">
+                <i class="icon-bonus"></i>
+                <span>Bonus</span>
+              </a>
+              <a href="https://fgfox.com/account/history" class="active">
+                <i class="icon-game"></i>
+                <span>Spillhistorie</span>
+              </a>
+              <a href="https://fgfox.com/logout">
+                <i class="icon-logout"></i>
+                <span>Exit</span>
+              </a>
+            </div>
+          </aside>
+        </div>
+        <main class="accountPage__main">
+          <div class="accountPage__title">Spillhistorie</div>
+          <div class="accountPage__content">
+            <div class="accountTabs">
+              <ul class="accountTabs__head">
+                <li
+                  class="accountTabs__tab js-accountTab active"
+                  data-target="casino"
+                >
+                  Kasinoets historie
+                </li>
+              </ul>
+              <div class="accountTabs__body">
+                <div
+                  id="casino"
+                  class="accountTabs__content js-accountTabContent active"
+                >
+                  <div class="casinoHistory">
+                    <div class="tableBuilder js-table">
+                      <div class="tableBuilder__filter">
+                        <form
+                          action="https://fgfox.com/account/balance/render-casino-bets"
+                          class="tableBuilderFilter js-table-form"
+                          siq_id="autopick_1462"
+                        >
+                          <input type="hidden" name="page" value="1" />
+                          <div class="tableBuilderFilter__grid">
+                            <div class="tableBuilderFilter__select">
+                              <div class="inputSelect">
+                                <select
+                                  name="transaction_type[]"
+                                  data-placeholder="Grunnleggende transaksjoner"
+                                  multiple=""
+                                  data-select2-id="1"
+                                  tabindex="-1"
+                                  class="select2-hidden-accessible"
+                                  aria-hidden="true"
+                                >
+                                  <option value="2,16,14,13,17">Bet</option>
+                                  <option value="3,20,15">Win</option>
+                                  <option value="18">Gratisspinn</option>
+                                  <option value="4,5,8,10,11,22,23">
+                                    Bonuser
+                                  </option></select
+                                ><span
+                                  class="select2 select2-container select2-container--default"
+                                  dir="ltr"
+                                  data-select2-id="2"
+                                  style="width: 100%"
+                                  ><span class="selection"
+                                    ><span
+                                      class="select2-selection select2-selection--multiple"
+                                      role="combobox"
+                                      aria-haspopup="true"
+                                      aria-expanded="false"
+                                      tabindex="-1"
+                                      aria-disabled="false"
+                                      ><ul class="select2-selection__rendered">
+                                        <li
+                                          class="select2-search select2-search--inline"
+                                        >
+                                          <input
+                                            class="select2-search__field"
+                                            type="search"
+                                            tabindex="0"
+                                            autocomplete="off"
+                                            autocorrect="off"
+                                            autocapitalize="none"
+                                            spellcheck="false"
+                                            role="searchbox"
+                                            aria-autocomplete="list"
+                                            placeholder="Grunnleggende transaksjoner"
+                                            style="width: 450px"
+                                          />
+                                        </li></ul></span></span
+                                  ><span
+                                    class="dropdown-wrapper"
+                                    aria-hidden="true"
+                                  ></span
+                                ></span>
+                              </div>
+                            </div>
+                            <div class="tableBuilderFilter__select">
+                              <div class="inputSelect">
+                                <select
+                                  name="bonuses_type[]"
+                                  data-placeholder="Bonustransaksjoner"
+                                  multiple=""
+                                  data-select2-id="3"
+                                  tabindex="-1"
+                                  class="select2-hidden-accessible"
+                                  aria-hidden="true"
+                                >
+                                  <option value="5,6,14">
+                                    Bet (bonuskonto)
+                                  </option>
+                                  <option value="7,10,15">
+                                    Win (bonuskonto)
+                                  </option>
+                                  <option value="4">
+                                    Gratisspinn (bonuskonto)
+                                  </option>
+                                  <option value="0,1,2,3,11,12,13">
+                                    Bonuser (bonuskonto)
+                                  </option></select
+                                ><span
+                                  class="select2 select2-container select2-container--default"
+                                  dir="ltr"
+                                  data-select2-id="4"
+                                  style="width: 100%"
+                                  ><span class="selection"
+                                    ><span
+                                      class="select2-selection select2-selection--multiple"
+                                      role="combobox"
+                                      aria-haspopup="true"
+                                      aria-expanded="false"
+                                      tabindex="-1"
+                                      aria-disabled="false"
+                                      ><ul class="select2-selection__rendered">
+                                        <li
+                                          class="select2-search select2-search--inline"
+                                        >
+                                          <input
+                                            class="select2-search__field"
+                                            type="search"
+                                            tabindex="0"
+                                            autocomplete="off"
+                                            autocorrect="off"
+                                            autocapitalize="none"
+                                            spellcheck="false"
+                                            role="searchbox"
+                                            aria-autocomplete="list"
+                                            placeholder="Bonustransaksjoner"
+                                            style="width: 450px"
+                                          />
+                                        </li></ul></span></span
+                                  ><span
+                                    class="dropdown-wrapper"
+                                    aria-hidden="true"
+                                  ></span
+                                ></span>
+                              </div>
+                            </div>
+                            <div class="tableBuilderFilter__amountFrom">
+                              <div class="input">
+                                <input
+                                  type="text"
+                                  name="amount-from"
+                                  placeholder="Beløp fra"
+                                  inputmode="text"
+                                />
+                              </div>
+                            </div>
+                            <div class="tableBuilderFilter__amountTo">
+                              <div class="input">
+                                <input
+                                  type="text"
+                                  name="amount-to"
+                                  placeholder="Beløp opp til"
+                                  inputmode="text"
+                                />
+                              </div>
+                            </div>
+                            <div class="tableBuilderFilter__dateStart">
+                              <div class="input">
+                                <input
+                                  type="text"
+                                  name="date-start"
+                                  value=""
+                                  placeholder="Dato fra"
+                                  data-id="Dlv4BsXf"
+                                  data-lang="en-US"
+                                  autocomplete="off"
+                                  readonly=""
+                                />
+                              </div>
+                              <script>
+                                $(function () {
+                                  let $input = $('input[data-id="Dlv4BsXf"]'),
+                                    date = new Date();
+
+                                  $input.each(function () {
+                                    $(this).datepicker({
+                                      date: date,
+                                      endDate: date,
+                                      language: $input.data("lang"),
+                                      format: "dd-mm-YYYY",
+                                      autoHide: true,
+                                    });
+                                  });
+                                });
+                              </script>
+                            </div>
+                            <div class="tableBuilderFilter__dateEnd">
+                              <div class="input">
+                                <input
+                                  type="text"
+                                  name="date-end"
+                                  value=""
+                                  placeholder="Date til"
+                                  data-id="nxtqDoD4"
+                                  data-lang="en-US"
+                                  autocomplete="off"
+                                  readonly=""
+                                />
+                              </div>
+                              <script>
+                                $(function () {
+                                  let $input = $('input[data-id="nxtqDoD4"]'),
+                                    date = new Date();
+
+                                  $input.each(function () {
+                                    $(this).datepicker({
+                                      date: date,
+                                      endDate: date,
+                                      language: $input.data("lang"),
+                                      format: "dd-mm-YYYY",
+                                      autoHide: true,
+                                    });
+                                  });
+                                });
+                              </script>
+                            </div>
+                          </div>
+                          <div class="tableBuilderFilter__submit">
+                            <div class="tableBuilderFilter__apply">
+                              <button
+                                type="submit"
+                                class="btn btn-transparent js-disableButton disabled"
+                              >
+                                <span>Søk</span>
+                              </button>
+                            </div>
+                            <div class="tableBuilderFilter__reset">
+                              <button
+                                type="reset"
+                                class="btn btn-transparent js-disableButton disabled"
+                              >
+                                <span>Avbryt</span>
+                              </button>
+                            </div>
+                            <div class="tableBuilderFilter__update">
+                              <button type="submit" class="btn btn-transparent">
+                                <i class="icon-reload"></i>
+                                <span>Forfriske</span>
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="tableBuilder__grid js-table-grid">
+                        <div class="tableBuilder__responsive">
+                          <div class="tableBuilder__table">
+                            <div class="tableBuilder__head">
+                              <div class="tableBuilder__row">
+                                <div class="tableBuilder__col">Dato/ID</div>
+                                <div class="tableBuilder__col">
+                                  En type/Navnet på spillet
+                                </div>
+                                <div class="tableBuilder__col">Sum</div>
+                                <div class="tableBuilder__col">Balansere</div>
+                                <div class="tableBuilder__col">Status</div>
+                              </div>
+                            </div>
+                            <div class="tableBuilder__body">
+                              <div class="tableBuilder__row">
+                                <div class="tableBuilder__col">
+                                  09.06.2022 12:24:02<br /><span>#6735315</span>
+                                </div>
+                                <div class="tableBuilder__col">
+                                  Bonus periodisering
+                                </div>
+                                <div class="tableBuilder__col">0</div>
+                                <div class="tableBuilder__col">0</div>
+                                <div class="tableBuilder__col">
+                                  <div class="deposit-result__completed">
+                                    lagt til i rekkefølge
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tableBuilder__pagination"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <aside class="sidebar">
+        <div class="sidebar__overlay js-closeSidebar"></div>
+        <div class="sidebar__content">
+          <div class="sidebar__close js-closeSidebar">
+            <i class="icon-close2"></i>
+          </div>
+          <div class="sidebar__top">
+            <a href="https://fgfox.com" class="sidebar__logo">
+              <img src="https://fgfox.com/img/app/logo.svg" alt="logo" />
+            </a>
+            <div class="sidebar__btns sidebar__btns_logged">
+              <div class="sidebar__deposit">
+                <a
+                  href="https://fgfox.com/account/deposit/deposit-modal"
+                  class="btn"
+                  rel="ajax:modal"
+                >
+                  Innskudd € 0.00
+                </a>
+              </div>
+            </div>
+          </div>
+          <nav class="sidebar__menu">
+            <ul class="menu__list menu__list_header">
+              <li class="menu__item">
+                <a href="https://fgfox.com/casino" class="menu__link">
+                  Alle spill
+                </a>
+              </li>
+              <li class="menu__item">
+                <a
+                  href="https://fgfox.com/bonuses"
+                  class="menu__link menu__link_bonus"
+                >
+                  Bonuser
+                  <span class="sticker">7</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a
+                  href="https://fgfox.com/tournaments"
+                  class="menu__link menu__link_tournament"
+                >
+                  <p>Turneringer</p>
+                  <span class="sticker">3</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a
+                  href="https://fgfox.com/vip-club"
+                  class="menu__link menu__link_blink"
+                >
+                  VIP-klubb
+                </a>
+              </li>
+            </ul>
+            <div class="menuCategories">
+              <a
+                href="#categories"
+                class="menu__link menu__link_submenu js-activeSubmenu active"
+              >
+                <span>Spillkategorier</span>
+                <i class="icon-arrow"></i>
+                <span class="sticker"></span>
+              </a>
+              <div class="submenu" style="display: block">
+                <ul class="submenu__list">
+                  <li class="submenu__item">
+                    <a
+                      href="https://fgfox.com/casino/top"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-top"></i>
+                      <p>Top spill</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a
+                      href="https://fgfox.com/casino/new"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-new"></i>
+                      <p>Ny</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a
+                      href="https://fgfox.com/casino/jackpot"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-jackpots"></i>
+                      <p>Jackpotter</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a
+                      href="https://fgfox.com/casino/live"
+                      class="submenu__link js-filterGames-categoryItem live"
+                    >
+                      <i class="icon-live2"></i>
+                      <p>Live</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a
+                      href="https://fgfox.com/casino/megaways"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-megaways"></i>
+                      <p>MEGAWAYS</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item">
+                    <a
+                      href="https://fgfox.com/casino/drops_win"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-drops_win"></i>
+                      <p>Drops&amp;Wins</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item" style="display: none">
+                    <a
+                      href="https://fgfox.com/casino/book"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-book"></i>
+                      <p>Book</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item" style="display: none">
+                    <a
+                      href="https://fgfox.com/casino/bonus_games"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-bonus_games"></i>
+                      <p>Bonusspill</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item" style="display: none">
+                    <a
+                      href="https://fgfox.com/casino/slots"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-slots"></i>
+                      <p>Spilleautomater</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item" style="display: none">
+                    <a
+                      href="https://fgfox.com/casino/roulette"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-roulette"></i>
+                      <p>Rulett</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item" style="display: none">
+                    <a
+                      href="https://fgfox.com/casino/favorites"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-favorites"></i>
+                      <p>Favoritter</p>
+                    </a>
+                  </li>
+                  <li class="submenu__item" style="display: none">
+                    <a
+                      href="https://fgfox.com/casino/latest"
+                      class="submenu__link js-filterGames-categoryItem"
+                    >
+                      <i class="icon-previous"></i>
+                      <p>Tidligere spill</p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="submenu__more">
+                  <button
+                    type="button"
+                    class="btn btn-small btn-transparent js-showSubmenuItems"
+                  >
+                    View More
+                  </button>
+                </div>
+              </div>
+            </div>
+            <ul class="menu__list menu__list_sidebar">
+              <li class="menu__item">
+                <a href="https://fgfox.com/casino" class="menu__link">
+                  <svg class="svg-diamond">
+                    <use
+                      xlink:href="/img/sprite.svg?v=112128#svg-diamond"
+                    ></use>
+                  </svg>
+                  <p>Spill</p>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="https://fgfox.com/casino/live" class="menu__link">
+                  <svg class="svg-live">
+                    <use xlink:href="/img/sprite.svg?v=112128#svg-live"></use>
+                  </svg>
+                  <p>Live Casino</p>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a
+                  href="https://fgfox.com/bonuses"
+                  class="menu__link menu__link_bonus"
+                >
+                  <svg class="svg-bonus">
+                    <use xlink:href="/img/sprite.svg?v=112128#svg-bonus"></use>
+                  </svg>
+                  <p>Bonuser</p>
+                  <span class="sticker">7</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a
+                  href="https://fgfox.com/tournaments"
+                  class="menu__link menu__link_tournament"
+                >
+                  <svg class="svg-reward">
+                    <use xlink:href="/img/sprite.svg?v=112128#svg-reward"></use>
+                  </svg>
+                  <p>Turneringer</p>
+                  <span class="sticker">3</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="https://fgfox.com/vip-club" class="menu__link">
+                  <svg class="svg-crown">
+                    <use xlink:href="/img/sprite.svg?v=112128#svg-crown"></use>
+                  </svg>
+                  <p>VIP-klubb</p>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#faq" class="menu__link js-faq js-closeSidebar">
+                  <svg class="svg-chat">
+                    <use xlink:href="/img/sprite.svg?v=112128#svg-chat"></use>
+                  </svg>
+                  <p>Live chat</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="sidebar__bigBtns">
+            <div class="sidebarBigBtn js-pwaWrap" style="display: flex">
+              <button type="button" class="sidebarBigBtn__btn js-pwaBtn">
+                <div class="sidebarBigBtn__icon">
+                  <i class="icon-android"></i>
+                </div>
+                <div class="sidebarBigBtn__text">
+                  <span>Android App</span>
+                </div>
+              </button>
+            </div>
+            <div class="sidebarBigBtn">
+              <a
+                href="https://fgfox.com/modal-ios-app"
+                class="sidebarBigBtn__link"
+                rel="ajax:modal"
+              >
+                <div class="sidebarBigBtn__icon">
+                  <i class="icon-ios"></i>
+                </div>
+                <div class="sidebarBigBtn__text">
+                  <span>iOS App</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="sidebar__lang">
+            <div class="languages">
+              <div class="languages__current">
+                <svg class="svg-no">
+                  <use xlink:href="/img/lang.svg?v=34097#svg-no"></use>
+                </svg>
+                <span>Norwegian</span>
+                <i class="icon-arrow"></i>
+              </div>
+              <div class="languages__choose">
+                <a href="https://fgfox.com/lang/set/en" class="languages__link">
+                  <svg class="svg-en">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-en"></use>
+                  </svg>
+                  <span class="languages__code">en</span>
+                  <span class="languages__name">English</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/fi" class="languages__link">
+                  <svg class="svg-fi">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-fi"></use>
+                  </svg>
+                  <span class="languages__code">fi</span>
+                  <span class="languages__name">Finnish</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/pl" class="languages__link">
+                  <svg class="svg-pl">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-pl"></use>
+                  </svg>
+                  <span class="languages__code">pl</span>
+                  <span class="languages__name">Polish</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/de" class="languages__link">
+                  <svg class="svg-de">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-de"></use>
+                  </svg>
+                  <span class="languages__code">de</span>
+                  <span class="languages__name">German</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/fr" class="languages__link">
+                  <svg class="svg-fr">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-fr"></use>
+                  </svg>
+                  <span class="languages__code">fr</span>
+                  <span class="languages__name">French</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/es" class="languages__link">
+                  <svg class="svg-es">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-es"></use>
+                  </svg>
+                  <span class="languages__code">es</span>
+                  <span class="languages__name">Spanish</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/it" class="languages__link">
+                  <svg class="svg-it">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-it"></use>
+                  </svg>
+                  <span class="languages__code">it</span>
+                  <span class="languages__name">Italian</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/el" class="languages__link">
+                  <svg class="svg-el">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-el"></use>
+                  </svg>
+                  <span class="languages__code">el</span>
+                  <span class="languages__name">Greek</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/au" class="languages__link">
+                  <svg class="svg-au">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-au"></use>
+                  </svg>
+                  <span class="languages__code">au</span>
+                  <span class="languages__name">Australian</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/ca" class="languages__link">
+                  <svg class="svg-ca">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-ca"></use>
+                  </svg>
+                  <span class="languages__code">ca</span>
+                  <span class="languages__name">Canadian</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/cs" class="languages__link">
+                  <svg class="svg-cs">
+                    <use xlink:href="/img/lang.svg?v=34097#svg-cs"></use>
+                  </svg>
+                  <span class="languages__code">cs</span>
+                  <span class="languages__name">Czech</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar__menu">
+            <ul class="sidebar__list">
+              <li class="sidebar__item">
+                <a
+                  href="https://fgfox.com/info/privacy_policy"
+                  class="sidebar__link"
+                >
+                  Personvernerklæring
+                </a>
+              </li>
+              <li class="sidebar__item">
+                <a
+                  href="https://fgfox.com/info/terms_and_conditions"
+                  class="sidebar__link"
+                >
+                  Vilkår og betingelser
+                </a>
+              </li>
+              <li class="sidebar__item green">
+                <a
+                  href="https://fgfox.com/info/contact_us"
+                  class="sidebar__link"
+                >
+                  Kontakt oss
+                </a>
+              </li>
+              <li class="sidebar__item">
+                <a
+                  href="https://fgfox.com/info/responsible_gaming"
+                  class="sidebar__link"
+                >
+                  Ansvarlig spilling
+                </a>
+              </li>
+              <li class="sidebar__item">
+                <a
+                  href="https://fgfox.com/info/about_fgfox"
+                  class="sidebar__link"
+                >
+                  Om oss
+                </a>
+              </li>
+              <div class="sidebar__item sidebar__item_faq">
+                <a href="https://fgfox.com/faq" class="sidebar__link">
+                  <span>FAQ</span>
+                </a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </aside>
+      <a href="#to-top" class="fixed__totop js-totop-fixed">
+        <i class="icon-arrow" aria-hidden="true"></i>
+      </a>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
