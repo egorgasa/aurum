@@ -128,60 +128,62 @@
 
       <div class="accountPage">
         <div class="accountPage__sidebar">
-          <aside class="accountSidebar">
-            <div class="accountSidebar__profile">
-              <div class="accountSidebar__name">shaikov.egor@yandex.ru</div>
-              <div class="accountSidebar__money">€ 0.00</div>
-              <div class="accountSidebar__icon js-accountSidebar">
-                <i class="icon-lkmenu"></i>
-              </div>
-              <div class="accountSidebar__info">
-                <div class="accountSidebar__withdraw">
-                  <p>€ 0.00</p>
-                  <p>Midler tatt ut</p>
-                </div>
-                <div class="accountSidebar__locked">
-                  <p>0</p>
-                  <p>Bonuser i kø</p>
-                </div>
-              </div>
-              <div class="accountSidebar__btn">
-                <a href="https://fgfox.com/account/deposit" class="btn"
-                  >Innskudd</a
-                >
-              </div>
-              <div class="accountSidebar__toggler js-accountSidebar"></div>
-            </div>
-            <div class="accountSidebar__menu">
-              <a href="https://fgfox.com/account/promo" class="">
-                <i class="icon-promo"></i>
-                <span>Promo</span>
-              </a>
-              <a href="https://fgfox.com/account/profile" class="">
-                <i class="icon-profile"></i>
-                <span>Profil</span>
-              </a>
-              <a href="https://fgfox.com/account/wallet" class="">
-                <i class="icon-wallet"></i>
-                <span>Lommebok</span>
-              </a>
-              <a href="https://fgfox.com/account/bonuses" class="">
-                <i class="icon-bonus"></i>
-                <span>Bonus</span>
-              </a>
-              <a href="https://fgfox.com/account/history" class="active">
-                <i class="icon-game"></i>
-                <span>Spillhistorie</span>
-              </a>
-              <a href="https://fgfox.com/logout">
-                <i class="icon-logout"></i>
-                <span>Exit</span>
-              </a>
-            </div>
-          </aside>
+  <aside class="accountSidebar">
+    <div class="accountSidebar__profile">
+      <div class="accountSidebar__name">shaikov.egor@yandex.ru</div>
+      <div class="accountSidebar__money">€ 0.00</div>
+      <div class="accountSidebar__icon js-accountSidebar">
+        <i class="icon-lkmenu"></i>
+      </div>
+      <div class="accountSidebar__info">
+        <div class="accountSidebar__withdraw">
+          <p>€ 0.00</p>
+          <p>Funds withdrawn</p>
         </div>
+        <div class="accountSidebar__locked">
+          <p>0</p>
+          <p>Bonuses in queue</p>
+        </div>
+      </div>
+      <div class="accountSidebar__btn">
+        <a href="" class="btn"
+        >Deposit</a
+        >
+      </div>
+      <div class="accountSidebar__toggler js-accountSidebar"></div>
+    </div>
+    <div class="accountSidebar__menu">
+      <a href="" class="">
+        <i class="icon-promo"></i>
+        <span>Promo</span>
+      </a>
+      <a href="" class="active">
+        <i class="icon-profile"></i>
+        <span>Profile</span>
+      </a>
+      <a href="" class="">
+        <i class="icon-wallet"></i>
+        <span>Wallet</span>
+      </a>
+      <a href="" class="">
+        <i class="icon-bonus"></i>
+        <span>Bonus</span>
+      </a>
+      <a href="" class="">
+        <i class="icon-game"></i>
+        <span>Game history</span>
+      </a>
+      <a href="">
+        <i class="icon-logout"></i>
+        <span>Log out</span>
+      </a>
+    </div>
+  </aside>
+</div>
+
         <main class="accountPage__main">
-          <div class="accountPage__title">Spillhistorie</div>
+          <div class="accountPage__title">Game history
+          </div>
           <div class="accountPage__content">
             <div class="accountTabs">
               <ul class="accountTabs__head">
@@ -189,7 +191,7 @@
                   class="accountTabs__tab js-accountTab active"
                   data-target="casino"
                 >
-                  Kasinoets historie
+                  Casino history
                 </li>
               </ul>
               <div class="accountTabs__body">
@@ -201,9 +203,9 @@
                     <div class="tableBuilder js-table">
                       <div class="tableBuilder__filter">
                         <form
-                          action="https://fgfox.com/account/balance/render-casino-bets"
+
                           class="tableBuilderFilter js-table-form"
-                          siq_id="autopick_1462"
+
                         >
                           <input type="hidden" name="page" value="1" />
                           <div class="tableBuilderFilter__grid">
@@ -408,7 +410,7 @@
                             <div class="tableBuilderFilter__apply">
                               <button
                                 type="submit"
-                                class="btn btn-transparent js-disableButton disabled"
+                                class="btn js-disableButton disabled"
                               >
                                 <span>Søk</span>
                               </button>
@@ -416,7 +418,7 @@
                             <div class="tableBuilderFilter__reset">
                               <button
                                 type="reset"
-                                class="btn btn-transparent js-disableButton disabled"
+                                class="btn  js-disableButton disabled"
                               >
                                 <span>Avbryt</span>
                               </button>

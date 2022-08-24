@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Build 2.0</title>
+<!--  <link rel="shortcut icon" href="assets/img/favicons/icon-favicon.svg" type="image/svg">-->
+<!--  <link href="assets/fonts/Geometria.woff2" as="font" rel="preload" crossorigin="anonymous">-->
+<!--  <link href="assets/fonts/Geometria-Bold.woff2" as="font" rel="preload" crossorigin="anonymous">-->
+  <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<link rel="stylesheet" href="../sass/blocks/catalog.scss">
+<body class="preloaded">
+<header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header-top">
+        <div class="container">
+          <div class="header__burger">
+            <i class="icon-hamburger"></i>
+          </div>
+          <div class="header__logo">
+            <a href="">
+              <picture>
+                <source media="(max-width: 1023px)" srcset="assets/img/svg/logo-min.svg">
+                <img src="assets/img/svg/logo.svg" alt="logo">
+              </picture>
+            </a>
+          </div>
+          <div class="header__search">
+            <div class="input-group">
+              <i class="icon-search"></i>
+              <input type="text" name="password" placeholder="Поиск" value="" required="" inputmode="text">
+            </div>
+          </div>
+          <div class="header__btns_menu">
+            <a href="" class=""><i class="icon-login icon-header__login"></i></a
+            ><a href="" class="btn btn_shadow">ВОЙТИ</a>
+          </div>
+          <div class="header__btns">
+            <a href="" class="btn btn_shadow">ДЕПОЗИТ</a
+            ><a href="" class="btn btn_shadow">ВОЙТИ</a>
+          </div>
+          <div class="headerTopRight__languages">
+            <div class="languages">
+              <div class="languages__current">
+                <svg class="svg-en">
+                  <use xlink:href="assets/img/lang.svg?v=34097#svg-en"></use>
+                </svg>
+                <span>English</span>
+                <i class="icon-arrow"></i>
+              </div>
+              <div class="languages__choose">
+                <a href="https://fgfox.com/lang/set/fi" class="languages__link">
+                  <svg class="svg-fi">
+                    <use xlink:href="assets/img/lang.svg?v=34097#svg-fi"></use>
+                  </svg>
+                  <span class="languages__code">fi</span>
+                  <span class="languages__name">Finnish</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/pl" class="languages__link">
+                  <svg class="svg-pl">
+                    <use xlink:href="assets/img/lang.svg?v=34097#svg-pl"></use>
+                  </svg>
+                  <span class="languages__code">pl</span>
+                  <span class="languages__name">Polish</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/de" class="languages__link">
+                  <svg class="svg-de">
+                    <use xlink:href="assets/img/lang.svg?v=34097#svg-de"></use>
+                  </svg>
+                  <span class="languages__code">de</span>
+                  <span class="languages__name">German</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/no" class="languages__link">
+                  <svg class="svg-no">
+                    <use xlink:href="assets/img/lang.svg?v=34097#svg-no"></use>
+                  </svg>
+                  <span class="languages__code">no</span>
+                  <span class="languages__name">Norwegian</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/fr" class="languages__link">
+                  <svg class="svg-fr">
+                    <use xlink:href="assets/img/lang.svg?v=34097#svg-fr"></use>
+                  </svg>
+                  <span class="languages__code">fr</span>
+                  <span class="languages__name">French</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/es" class="languages__link">
+                  <svg class="svg-es">
+                    <use xlink:href="assets/img/lang.svg?v=34097#svg-es"></use>
+                  </svg>
+                  <span class="languages__code">es</span>
+                  <span class="languages__name">Spanish</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/it" class="languages__link">
+                  <svg class="svg-it">
+                    <use xlink:href="assets/img/lang.svg?v=34097#svg-it"></use>
+                  </svg>
+                  <span class="languages__code">it</span>
+                  <span class="languages__name">Italian</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/el" class="languages__link">
+                  <svg class="svg-el">
+                    <use xlink:href="assets/img/lang.svg?v=34097#svg-el"></use>
+                  </svg>
+                  <span class="languages__code">el</span>
+                  <span class="languages__name">Greek</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/au" class="languages__link">
+                  <svg class="svg-au">
+                    <use xlink:href="assets/img/lang.svg?v=34097#svg-au"></use>
+                  </svg>
+                  <span class="languages__code">au</span>
+                  <span class="languages__name">Australian</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/ca" class="languages__link">
+                  <svg class="svg-ca">
+                    <use xlink:href="assets/img/lang.svg?v=34097#svg-ca"></use>
+                  </svg>
+                  <span class="languages__code">ca</span>
+                  <span class="languages__name">Canadian</span>
+                </a>
+                <a href="https://fgfox.com/lang/set/cs" class="languages__link">
+                  <svg class="svg-cs">
+                    <use xlink:href="assets/img/lang.svg?v=34097#svg-cs"></use>
+                  </svg>
+                  <span class="languages__code">cs</span>
+                  <span class="languages__name">Czech</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="header-bottom">
+        <nav>
+          <ul class="header-list">
+            <li><a href=""> <span class="header-list__icon"><i class="icon-slots_2"></i></span> Slots</a></li>
+            <li><a href=""> <span class="header-list__icon"><i class="icon-live_casino_2"></i></span>Live Casino</a>
+            </li>
+            <li><a href="" class="active"> <span class="header-list__icon"><i class="icon-table_game"></i></span>Table
+              Game</a></li>
+            <li><a href=""> <span class="header-list__icon"><i class="icon-vip"></i></span>VIP Room</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<main class="page">
+  <section class="pageTitle">
+    <div class="container">
+      <div class="pageTitle__wrapper">
+        <h1>Provider tournaments</h1>
+      </div>
+    </div>
+  </section>
+  <section class="info">
+    <div class="defaultContainer">
+      <div class="textPage__wrapper">
+        <h2>SCOPE</h2>
+        <p>This Privacy Policy (hereafter referred to as the “Policy”) outlines the manner in which The Company handles
+          the information and personal data which You have provided to Us (or which We have collected) and which enables
+          Us to be able to effectively manage the relationship which You have with Us.<br><br>This Policy applies to Our
+          websites, applications, products and/or services that link to this policy or do not have a separate privacy
+          policy (hereinafter referred to as Our services). This privacy policy is intended to give You a better
+          understanding of the data We collect, the reason why We collect such data, the manner in which We process this
+          data, the entities with whom We share the said personal data, Your rights in relation to the collection,
+          processing and sharing of such data and any other pertinent matter relating to privacy and security.<br><br>Any
+          personal data You will provide or which We already hold will be processed in line with and in the manner set
+          out in this Privacy Policy. Any and all information will be provided through any of The Company websites (“The
+          Website”), the designated telephone numbers or any other means which The Company may make available from time
+          to time.<br><br>By reading this Policy, you understand and acknowledge that your Personal Data may be
+          processed in the ways set forth in this Policy. If you do not agree with the terms of this Privacy Policy,
+          please do not use the Website or otherwise provide us with your Personal Information.<br><br>Any reference in
+          this Policy to "Company", "Us" or "Our" (and all declensions of those words) refers to the Data Controller
+          referred to as Fair Game G.P. N.V. (141938) and registered at Abraham de Veerstraat 9, Curacao <br><br>All
+          processing of Personal Data performed by The Company as envisaged in this Privacy Policy shall be carried out
+          in line with:<br>● The National Ordinance on the Protection of Personal Data (hereafter referred to as the
+          “DPA”) as well as any other subsidiary legislation issued under the DPA, both as may be amended from time to
+          time; and<br>● Regulation (EU) 2016/679 of The European Parliament And of The Council of 27 April 2016 On The
+          Protection of Natural Persons With Regard to The Processing of Personal Data And On The Free Movement of Such
+          Data, And Repealing Directive 95/46/EC (General Data Protection Regulation)” (hereinafter referred to as “the
+          Regulation” or “GDPR”).<br><br>The DPA and the GDPR shall hereafter be collectively referred to as the “Data
+          Protection Laws”.<br><br>The Company determines the means and purposes of the processing of Personal Data and
+          therefore acts as the “Data Controller” in terms of the applicable Data Protection Laws.<br><br><br></p>
+        <h2>DEFINITIONS</h2>
+        <p><strong>Data Controller<br></strong><br>“The Data Controller” means the natural or legal person, public
+          authority, agency or other body which, alone or jointly with others, determines the purposes and means of the
+          processing of personal data; where the purposes and means of such processing are determined by Union or Member
+          State law, the controller or the specific criteria for its nomination may be provided for by Union or Member
+          State law.<br><br><strong>The Data Processor</strong><br><br>“The Data Processor” means a natural or legal
+          person, public authority, agency or other body which processes personal data on behalf of the
+          controller.<br><br><strong>Personal Data<br></strong><br>“Personal Data” means any information that identifies
+          You individually or relates to an identified or identifiable natural person which can also be defined as data
+          subject.<br><br><br></p>
+        <h2>SECURITY</h2>
+        <p>The Company has adopted a secure communication protocol via the Internet TLS 1.2, used to implement the
+          protected remittances. This protocol involves the encryption of Your Personal Data during transmission over
+          the internet. Moreover, The Company stores Your Personal <br>Data digitally on encrypted hard drives which is
+          an additional guarantee of security of personal data.<br><br>Our services are registered with site
+          identification authorities so that your browser can confirm Our identity before any personally identifiable
+          information is sent. In addition, our secure servers protect this information using advanced firewall
+          technology.</p>
+        <h2><br>PERSONAL DATA PROTECTION</h2>
+        <p>Personal Data held by Us is protected using the highest industry standard security processes and systems. Our
+          commitment to protect personal data is not merely through quality and high standards but also through the best
+          and most efficient application of the law. We are bound to only process personal data if such processing is
+          based on a genuine and legitimate reason to do so on the basis of one of the legal grounds established in the
+          GDPR.<br><br><br></p>
+        <h2>PROCESSING ON THE BASIS OF OUR LEGITIMATE INTERESTS</h2>
+        <p>A legitimate interest exists when We have a business or commercial reason upon which personal data will be
+          processed. In such a case We undertake to protect any and all of Your personal data and the manner in which
+          such data is processed and to ensure that such processing would not be unfair to You or to Your
+          interest.<br><br>If and when We decide to process Your personal data on the basis of legitimate interest, We
+          will inform You of such, what said legitimate interest are and provide a process whereby You will be able to
+          raise any questions and/or objections which You way have in relation to such processing. It is important to
+          note that The Company is not obliged to stop processing if the grounds for processing over-ride Your right to
+          object. An example of this can be in the case where we need to process your data to abide with the anti money
+          laundering purposes. This also applies when we act in accordance with the binding requirements of Curacao law,
+          as it is our legitimate interest to operate lawfuly.<br><br><br></p>
+        <h2>PROCESSING ON THE BASIS OF YOUR CONSENT</h2>
+        <p>Consent is not the only ground we may be permitted or obliged to rely on to process Your personal data. We
+          will only process personal data on the basis of Your consent where we cannot or otherwise choose not to rely
+          on any ulterior legal ground (such as compliance with a legal obligation or legitimate interest). Where we
+          process Your personal data on the basis of Your consent, you shall have the right to withdraw your consent at
+          any time and in the same manner as it had been previously provided by Yourself. In the case that You exercise
+          Your right to withdraw consent, we would then determine whether we are able (or obliged) to process Your
+          personal data on the basis of any other legal ground other than consent. If this is the case We will notify
+          You accordingly. Any such withdrawal of Your consent will not invalidate any processing operations carried out
+          prior to You having withdrawn Your consent.<br><br><br></p>
+        <h2>DATA RETENTION POLICY</h2>
+        <p>Any and all personal data The Company will keep will be protected in the best way possible and will only be
+          used for purposes which are compatible with the applicable Data Protection Laws as well as any other
+          applicable laws. The Company will retain Your Personal Data only for as long as is necessary (taking into
+          consideration the purpose for which it was originally obtained). The criteria We use to determine what is
+          ‘necessary’ depends on the particular Personal Data in question and the specific relationship We have with You
+          (including its duration).<br><br>Generally, Our normal practice is to determine whether there is/are any
+          specific law(s) (for example tax or corporate laws) permitting or even obliging Us to keep certain Personal
+          Data for a certain period of time (in which case We will keep the Personal Data for the maximum period
+          indicated by any such law). For example, any data that can be deemed to be “transactional data” must be kept
+          for at least five (5) years.<br><br>We would also have to determine whether there are any laws and/or
+          contractual provisions that may be invoked against Us by You and/or third parties and if so, what the
+          prescriptive periods for such actions are (this is usually five (5) years). In the latter case, We will keep
+          any relevant Personal Data that We may need to defend Ourselves against any claim(s), challenge(s) or other
+          such action(s) by You and/or third parties for such time as is necessary.<br><br>Where Your Personal Data is
+          no longer required by Us, We will either securely delete or anonymise the Personal Data in question.<br><br>Failure
+          to provide Your Personal Data may prevent The Company from meeting its legal and regulatory obligations,
+          fulfilling its contractual obligations and rendering and/or performing the necessary services needed to
+          satisfactorily manage and maintain Your account. Therefore, failure to provide the necessary personal data may
+          lead to The Company being unable to provide You with certain products and/or services.<br><br><br></p>
+        <h2>PERSONAL DATA WHICH WE COLLECT, PURPOSE OF THE PROCESSING &amp; LEGAL BASIS OF THE PROCESSING</h2>
+        <p>The following list outlines the categories of personal data which We process, the purpose for which We
+          process such data as well as the corresponding legal basis used for such processing. It is pertinent to know
+          that the same categories of personal data may be processed for different purposes and therefore on the basis
+          of a various legal grounds simultaneously depending on the purpose of processing.</p>
+        <p>1. CATEGORIES OF PERSONAL DATA</p>
+        <p><span style="font-weight: 400;">1.1 Contact data (Ex: Name, Surname, residence mailing address with post code, telephone/mobile number, email address, a recent utility bill showing your residential address).&nbsp;Identity data (Ex: Name, Surname, address, date of birth, identity card/passport number, a photograph, gender, occupation, your marital status and family, hobbies).<br>1.2 Contact data.&nbsp;Identity data<br>1.3 Contact data.<br>1.4 Activity data (your website logins, activity and transactions on our site, ex: all bets placed, winnings and bonuses received, payments and withdrawals from your account, analytics information some of your browsing history, your favourite bet types or games time spent on particular pages, clicks, actions, cookies, communications you have with customer services by phone, email or live chat, if you self-excluded from our services, etc).<br>1.5 Technical data (traffic data, GeoIP location, information from your browser, computer or mobile device when You access or use Our services, ex; device and network information.<br>1.6 Financial data (currency, credit card and banking information or other payment details, source of funds).<br></span><span
+          style="font-weight: 400;">1.7 Data required for marketing and educational purposes (Ex: Name, Surname, mailing address, telephone/mobile number, email address, proof of opt-in consent (where required), proof of objections to marketing, website data and online identifiers (such as IP address, and other information generated by Your browser)).</span><b><span
+          style="font-weight: 400;"><br></span></b><b><span style="font-weight: 400;"></span></b></p>
+        <p>2. PURPOSE OF THE PROCESSING</p>
+        <p><b><span style="font-weight: 400;">2.1&nbsp;</span></b><span style="font-weight: 400;">To set up a record on Our system and register you as a new customer.&nbsp;</span><span
+          style="font-weight: 400;">To verify your identity and prevent any possible fraudulent activity such as third parties using your data for impersonation.&nbsp;</span><span
+          style="font-weight: 400;">To provide additional security for your credit data and credit card usage.&nbsp;</span><span
+          style="font-weight: 400;">To be able to provide You with any information regarding Your profile and any requests.&nbsp;</span><span
+          style="font-weight: 400;">To provide support and protection from problem gambling addictions.<br>2.2 To manage and monitor our ongoing relationship with You and provide You with full customer care services.<br>2.3 To subscribe to a newsletter, campaigns and/or to be added to a mailing list.<br>2.4&nbsp;</span><span
+          style="font-weight: 400;">To provide You with any information regarding Your profile and any requests.&nbsp;</span><span
+          style="font-weight: 400;">To personalise Your customer experience.&nbsp;</span><span
+          style="font-weight: 400;">To ensure a responsible gaming environment.&nbsp;</span><span
+          style="font-weight: 400;">To ensure that We have the latest information on any queries, complaints or questions you may have had in the past to enable us to improve our service.<br>2.5&nbsp;</span><span
+          style="font-weight: 400;">To manage our ongoing relationship with You, provide You with our services of sports betting and casino games.&nbsp;</span><span
+          style="font-weight: 400;">To personalise Your customer experience.&nbsp;</span><span
+          style="font-weight: 400;">To prevent any fraudulent activity and to provide additional security for your personal and credit data.<br>2.6&nbsp;</span>To
+          manage our ongoing relationship with You and provide You with our services of sports betting and casino games.
+          To prevent any type of fraudulent activity and to provide additional security for your credit data. To monitor
+          your deposits and withdrawals and to prevent any unlawful usage from third parties. To provide You with any
+          information regarding Your profile and any requests.<br>2.7&nbsp;<span style="font-weight: 400;">To provide You with marketing material that You have requested from Us or that we are otherwise authorised to send You.&nbsp;</span><span
+            style="font-weight: 400;">To provide you with educational materials, upcoming events and other related information that may be useful to you in relation to received services and for educational purposes.&nbsp;</span><span
+            style="font-weight: 400;">To personalise Your customer experience.<br></span></p>
+        <p><span style="font-weight: 400;">3. LEGAL BASIS USED FOR PROCESSING</span></p>
+        <p><span style="font-weight: 400;">3.1&nbsp;</span><span style="font-weight: 400;">Contractual Necessity. Legitimate Interest (ensuring we maintain an accurate record on Our system and providing You with information which you may have requested). Gambling licence requirements.&nbsp;</span><span
+          style="font-weight: 400;">Anti-money laundering and KYC regulations.&nbsp;</span><span
+          style="font-weight: 400;">Your consent (when processed for direct marketing purposes). Responsible Gaming regulations.&nbsp;<br>3.2&nbsp;Contractual Necessity.<br>3.3&nbsp;<span>Your consent.</span><br>3.4&nbsp;</span><span
+          style="font-weight: 400;">Contractual Necessity. Legitimate Interest (providing and developing innovative gaming and betting experiences to our users on a sustained basis). Responsible Gambling licence requirements.&nbsp;</span><span
+          style="font-weight: 400;">Anti-money laundering and KYC regulations.<br>3.5&nbsp;Legitimate Interest (providing and developing innovative gaming and betting experiences to our users on a sustained basis). Gambling licence requirements.<br>3.6&nbsp;</span><span
+          style="font-weight: 400;">Contractual Necessity. Legitimate Interest (ensuring we maintain an accurate record on Our system and providing You with information which you may have requested). Gaming licence requirements.&nbsp;</span><span
+          style="font-weight: 400;">Anti-money laundering and KYC regulations.<br>3.7&nbsp;</span><span
+          style="font-weight: 400;">Your consent (where required)&nbsp;</span><span
+          style="font-weight: 400;">OR&nbsp;</span><span style="font-weight: 400;">Our Legitimate interests (for marketing purposes, where We do not require Your consent &amp; to improve Our services).<br></span>
+        </p>
+        <p><span style="font-weight: 400;">The Company may also collect personal data from publicly available sources such as web searches, company registers and broadcast media provided it is reasonable to do so and such conduct is not detrimental to Your rights and freedoms.<br><br>Some of your data will also be used to carry out checks which will help complete the Profiling of your account. Profiling is a procedure that includes any form of automated processing of personal data required to abide with AML directives and prevent any other Fraudulent activity from happening using your personal details. These could be Tax Evasion or Suspicious betting patterns to name a few.<br><br>No automated decision will be made, including for Marketing purposes. Example of details which are verified automatically by the system are IP address or PEP checks required. However, in all such cases the final decision is made by our human staff. Email address is also verified however You will receive an email to confirm Your own email address.</span><br><br>
+        </p>
+        <h2>PROCESSING ON THE BASIS OF CONSENT</h2>
+        <p>For the avoidance of all doubt, We would like to point out that in those limited cases where We cannot or
+          choose not to rely on another legal ground (for example, Our legitimate interests), We will process Your
+          Personal Data on the basis of Your consent.<br><br>In those cases where We process on the basis of Your
+          consent (which We will never presume but which We shall have obtained in a clear and manifest manner from
+          You), YOU HAVE THE RIGHT TO WITHDRAW YOUR CONSENT AT ANY TIME and this, in the same manner as You shall have
+          provided it to Us.<br><br>Should You exercise Your right to withdraw Your consent at any time (by writing to
+          Us at the physical or email address below), We will determine whether at that stage an alternative legal basis
+          exists for processing Your Personal Data (for example, on the basis of a legal obligation to which We are
+          subject) where We would be legally authorised (or even obliged) to process Your Personal Data without needing
+          Your consent and if so, notify You accordingly.<br><br>When We ask for such Personal Data, You may always
+          decline, however should You decline to provide Us with necessary data that We require to provide requested
+          services, We may not necessarily be able to provide You with such services (especially if consent is the only
+          legal ground that is available to Us).<br><br>Just to clarify, consent is not the only ground that permits Us
+          to process Your Personal Data. In the last preceding section above We pointed out the various grounds that We
+          rely on when processing Your Personal Data for specific purposes.<br><br><br></p>
+        <h2>СOOKIES</h2>
+        <p>When You visit Our Site, We collect certain categories of Personal Data automatically through the use of
+          cookies and similar technologies.<br><br>When you use the Website, a cookie will be stored on your computer.
+          Generally, cookies and similar technologies work by assigning to your browser or device a unique number that
+          has no meaning outside of Our Site. We use these technologies to personalize your experience, including
+          language and currency preferences and to assist in delivering content specific to your interests.
+          Additionally, after you’ve entered your email address and password during a session on the Website we save
+          that information so you don’t have to re-enter it repeatedly during that session. This may be extended, where
+          you have agreed to do so, for future automatic logins. Most browsers automatically accept cookies. To manage
+          the collection of information through cookies or other equivalent technology you can use the settings on your
+          browser or mobile device. We are committed to providing you choices to manage your privacy and sharing however
+          we do not recognize or respond to browser-initiated Do Not Track signals, as the internet industry has not
+          fully developed Do Not Track standards, implementations and solutions.<br><br>To learn more about Do Not Track
+          signals, you can visit https://allaboutdnt.com. Not accepting cookies may make certain features of the Website
+          unavailable to you. We may also use your IP address to identify you, to administer the Website and to assist
+          in diagnosing problems with our servers.<br><br><br></p>
+        <h2>OTHER PURPOSES</h2>
+        <p>We may be required to use and retain personal information for loss prevention and to protect Our rights,
+          privacy, safety, or property, or those of other persons in accordance with Our legitimate
+          interests.<br><br><br></p>
+        <h2>AUTHORISED DISCLOSURES OF PERSONAL DATA TO THIRD PARTIES</h2>
+        <p>Without prejudice to anything else contained in this Privacy Policy, personal data relating to You may be
+          shared with authorised third parties or any of the relevant competent authorities located in or outside of the
+          EU/EEA where such disclosures are permitted or required pursuant to Data Protection Laws and/or any other
+          applicable legislation.<br><br>These authorised third parties may include but are not limited to entities
+          within The Company, other third parties and organisations such as law enforcement agencies, collaborating
+          accounting and auditing firms, regulators, relevant authorities and digital marketing providers. We may also
+          share such personal data with organisations who have introduced You to Us, third parties which You have asked
+          Us or permitted Us to share Your data with or any other third party which We must necessarily share Your
+          personal data with so as to be able to provide the products and/or services which You have requested. The
+          personal data shared will depend on the product/s and or service/s You choose to use.<br><br>When any such
+          personal data has to be transferred outside of the EEA – European Economic Area, We ensure that all the
+          necessary and appropriate safeguards are in place. We may also disclose personal information to other
+          companies within associated or subsidiary companies and to business partners, or successors in title to Our
+          business. The manner in which data transfer outside the EEA is handled is detailed below. Your Personal Data
+          will never be shared with third parties for their marketing purposes (unless You give Your consent
+          thereto).<br><br><br></p>
+        <h2>SHARING OF PERSONAL DATA WITH OTHER CATEGORIES OF RECIPIENTS</h2>
+        <p>Relevant data will also be disclosed or shared as appropriate (and in all cases in line with the Data
+          Protection Laws) to/with members and staff of The Company, to/with other entities within The Company (for
+          example in compliance with legal obligations) and/or to/with affiliated entities and/or sub-contractors if
+          pertinent to any of the purposes listed in this Privacy Policy (including to/with Our services providers who
+          facilitate the functionality of the Site and/or any service You may require). Personal information will only
+          be shared by Us to provide the services You request from Us or for any other lawful reason (including
+          authorised disclosures not requiring Your consent).<br><br>Any such authorised disclosures will be done in
+          accordance with the Data Protection laws (for example, all Our processors are contractually bound by the
+          requirements in the said Data Protection Laws, including a strict obligation to keep any information they
+          receive confidential and to ensure that their employees/personnel are also bound by similar obligations). The
+          said service providers (Our processors) are also bound by a number of other obligations (in particular, those
+          established in Article 28 of the GDPR).<br><br>Your Personal Data will never be shared with third parties for
+          their own marketing purposes (unless You give Your consent thereto).<br><br><br></p>
+        <h2>INTERNET COMMUNICATIONS</h2>
+        <p>You will be aware that data sent via the Internet may be transmitted across international borders even where
+          sender and receiver of information are located in the same country. We cannot be held responsible for anything
+          done or omitted to be done by You or any third party in connection with any Personal Data prior to Our
+          receiving it including but not limited to any transfers of Personal Data from You to Us via a country having a
+          lower level of data protection than that in place in the European Union, and this, by any technological means
+          whatsoever (for example, WhatsApp, Skype, Dropbox etc.).<br><br>Moreover, We shall accept no responsibility or
+          liability whatsoever for the security of Your data while in transit through the internet unless Our
+          responsibility results explicitly from a law having effect in Curacao.<br><br><br></p>
+        <h2>ACCURACY OF PERSONAL DATA</h2>
+        <p>All reasonable efforts are made to keep any Personal Data We may hold about You up-to-date and as accurate as
+          possible. You can check the information that We hold about You at any time by contacting Us in the manner
+          explained below. If You find any inaccuracies, We will correct them and where required, delete them as
+          necessary. Please see below for a detailed list of Your legal rights in terms of any applicable data
+          protection law.<br><br><br></p>
+        <h2>LINKS TO THIRD PARTY SITES</h2>
+        <p>Links that We provide to third-party websites are clearly marked and We are not in any way whatsoever
+          responsible for (nor can We be deemed to endorse in any way) the content of such websites (including any
+          applicable privacy policies or data processing operations of any kind). We suggest that You should read the
+          privacy policies of any such third-party websites.<br><br><br></p>
+        <h2>TRANSFER OF DATA OUTSIDE OF THE EEA</h2>
+        <p>The security of Your data is our top priority. We have taken suitable technical and organizational measures
+          to safeguard and secure the data we collect. All your personal data is stored on secure servers maintained by
+          certified, reputable service providers.<br><br>Your personal data is primarily stored and processed within the
+          EEA. However, we may share Your personal data with certain third parties, as described above, and Your data
+          may be accessed or stored by them. Some of these third parties may process Your personal data as
+          sub-processors outside the EEA. Your personal data may also be accessed and processed by staff or agents
+          operating outside the EEA who work for us Our contract with You.<br><br>Whenever such transfer of your
+          personal data outside the EEA occurs, We will ensure that appropriate safeguards are in place, and that Your
+          enforceable rights as a data subject and effective legal remedies are available, by relying on the use of
+          standard contractual clauses and/or other appropriate legal grounds. You are entitled to receive a copy of
+          such safeguards by contacting Us at support@fgfox.com. We will contractually bind all our processors to the
+          strict security standards which will afford the same level of personal data protection as is enjoyed within
+          the EEA.<br><br>By accepting this Policy, you specifically agree and opt-in for Your personal data to be
+          transferred outside the EEA as outlined in this Policy.<br><br><br></p>
+        <h2>DATA SUBJECT RIGHTS</h2>
+        <p>The Company undertakes to assist You in the best way possible should You choose to exercise any of Your
+          rights with respect to Your personal data. In certain cases We might need to verify Your identity prior to
+          acceding to Your request to exercise any relevant right.<br><br><strong>Right of Access</strong><br><br>You
+          have a right to ask Us whether We are processing any personal data which concerns You and if this is the case,
+          You shall have the right to access that personal data as well as the following information:<br>● What Personal
+          Data We have;<br>● Why We process them;<br>● Who We disclose them to;<br>● How long We intend on keeping them
+          for (where possible);<br>● Whether We transfer them abroad and the safeguards We take to protect them;<br>●
+          What Your rights are;<br>● How You can make a complaint;<br>● Where We got Your Personal Data from and -
+          Whether We have carried out any automated decision-making (including profiling) as well as related
+          information.<br><br><strong>Right to rectification</strong><br><br>You have a right to ask us to have any
+          inaccurate or incomplete personal data relating to You rectified and/or completed.<br><br><strong>Right of
+            erasure (the “right to be forgotten”)</strong><br><br>You have the right to ask Us to delete Your Personal
+          Data and We shall comply without undue delay where:<br>● The Personal Data are no longer necessary for the
+          purposes for which they were collected; or<br>● You have withdrawn Your consent (in those instances where We
+          process on the basis of Your consent) and We have no other legal ground to process Your Personal Data; or<br>●
+          You shall have successfully exercised Your right to object (as explained below); or<br>● Your Personal Data
+          shall have been processed unlawfully; or<br>● There exists a legal obligation to which We are subject; or<br>●
+          Special circumstances exist in connection with certain children’s rights.<br>In any case, We shall not be
+          legally bound to comply with Your erasure request if the processing of Your Personal Data is necessary to
+          comply with a legal obligation imposed on Us.<br><br><strong>Right to Restriction of
+            Processing</strong><br><br>You have the right to ask Us to restrict the processing of Your personal data.
+          However, You are only able to exercise this right where:<br>● The accuracy of Your Personal Data is contested
+          (see the right to data rectification above), for a period enabling Us to verify the accuracy of the Personal
+          Data; or<br>● The processing is unlawful and You oppose the erasure of Your Personal Data; or<br>● We no
+          longer need the Personal Data for the purposes for which they were collected but You need the Personal Data
+          for the establishment, exercise or defence of legal claims; or<br>● You exercised Your right to object and
+          verification of Our legitimate grounds to override Your objection is pending.<br>Should You successfully
+          exercise this right, We would only be in a position to process Your personal data:<br>● Where We have Your
+          consent; or<br>● For the establishment, exercise or defence of legal claims; or<br>● We no longer need the
+          Personal Data for the purposes for which they were colFor the protection of the rights of another natural or
+          legal person; or<br>● For reasons of important public interest.<br><br><strong>Right to Data
+            Portability<br></strong><br>You have the right to ask Us to provide You with Your personal data which You
+          would have previously provided to Us. We will provide You such data in a structured, commonly used, machine
+          readable format, or (where technically feasible) We may have the data sent directly to another Data
+          Controller, provided this does not adversely affect the rights and freedoms of others. You may only exercise
+          this right where:<br>● The processing is based on Your consent or on the performance of a contract with You;
+          and<br>● The processing is carried out by automated means.<br>Right to Withdraw Consent<br>You have the right
+          to withdraw your consent at any time. For detailed information on this right, please refer to “PROCESSING ON
+          THE BASIS OF CONSENT” section 9 which can be found above.<br><br><strong>Right to object to
+            processing</strong><br><br>In certain instances, You have the right to object to the processing of Your
+          personal data. Where we are only processing Your personal data on the basis of one of the following
+          purposes:<br>● The processing is necessary for the performance of a task carried out in the public interest;
+          or<br>● When processing is necessary for the purposes of the legitimate interests pursued by Us or by a third
+          party, the processing shall only cease where the Data Controller has not provided compelling and legitimate
+          grounds which outweigh the objections raised by You in such a request and which require the processing to
+          continue.<br>Where Your data is being processed for direct marketing purposes, You have the right to object to
+          the processing of Your personal data at any time.<br>In all other instances apart from those listed above,
+          this general right to object shall not subsist.<br><br><strong>Right to lodge a complaint<br></strong><br>As a
+          Data subject You may at any time lodge a complaint with any relevant Data Protection Supervisory Authority
+          should You feel that any of Your rights have been impinged by The Company.<br>Notwithstanding this right, We
+          kindly ask You to please attempt to resolve any issues You may have with Us prior lodging a complaint.<br>It
+          is important to note that notwithstanding such rights, The Company may still refuse such request if it can
+          reasonably justify such decision. Such refusal does not prohibit You from lodging a complaint with the
+          relevant data protection authority.<br><br><br></p>
+        <h2>COMPANY CONTACT INFORMATION</h2>
+        <p>If You have any questions or comments about privacy or should You wish to exercise any of Your individual
+          rights, please contact Us. Should you need to you can also contact our customer service team who will be happy
+          to provide you with the required assistance.<br>The Company’s Data Protection Officer can be contacted
+          directly at <a href="mailto:support@fgfox-casino.com">support@fgfox.com.</a><br><br></p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer id="footer" class="footer">
+  <div class="defaultContainer footer__content">
+    <div class="footer__lang">
+      <div class="languages">
+        <div class="languages__current">
+          <svg class="svg-en">
+            <use xlink:href="/img/lang.svg?v=33695#svg-en"></use>
+          </svg>
+          <span>English</span>
+          <i class="icon-arrow"></i>
+        </div>
+        <div class="languages__choose">
+          <a href="https://fgfox.com/lang/set/fi" class="languages__link">
+            <svg class="svg-fi">
+              <use xlink:href="/img/lang.svg?v=33695#svg-fi"></use>
+            </svg>
+            <span class="languages__code">fi</span>
+            <span class="languages__name">Finnish</span>
+          </a>
+          <a href="https://fgfox.com/lang/set/pl" class="languages__link">
+            <svg class="svg-pl">
+              <use xlink:href="/img/lang.svg?v=33695#svg-pl"></use>
+            </svg>
+            <span class="languages__code">pl</span>
+            <span class="languages__name">Polish</span>
+          </a>
+          <a href="https://fgfox.com/lang/set/de" class="languages__link">
+            <svg class="svg-de">
+              <use xlink:href="/img/lang.svg?v=33695#svg-de"></use>
+            </svg>
+            <span class="languages__code">de</span>
+            <span class="languages__name">German</span>
+          </a>
+          <a href="https://fgfox.com/lang/set/no" class="languages__link">
+            <svg class="svg-no">
+              <use xlink:href="/img/lang.svg?v=33695#svg-no"></use>
+            </svg>
+            <span class="languages__code">no</span>
+            <span class="languages__name">Norwegian</span>
+          </a>
+          <a href="https://fgfox.com/lang/set/fr" class="languages__link">
+            <svg class="svg-fr">
+              <use xlink:href="/img/lang.svg?v=33695#svg-fr"></use>
+            </svg>
+            <span class="languages__code">fr</span>
+            <span class="languages__name">French</span>
+          </a>
+          <a href="https://fgfox.com/lang/set/es" class="languages__link">
+            <svg class="svg-es">
+              <use xlink:href="/img/lang.svg?v=33695#svg-es"></use>
+            </svg>
+            <span class="languages__code">es</span>
+            <span class="languages__name">Spanish</span>
+          </a>
+          <a href="https://fgfox.com/lang/set/it" class="languages__link">
+            <svg class="svg-it">
+              <use xlink:href="/img/lang.svg?v=33695#svg-it"></use>
+            </svg>
+            <span class="languages__code">it</span>
+            <span class="languages__name">Italian</span>
+          </a>
+          <a href="https://fgfox.com/lang/set/el" class="languages__link">
+            <svg class="svg-el">
+              <use xlink:href="/img/lang.svg?v=33695#svg-el"></use>
+            </svg>
+            <span class="languages__code">el</span>
+            <span class="languages__name">Greek</span>
+          </a>
+          <a href="https://fgfox.com/lang/set/au" class="languages__link">
+            <svg class="svg-au">
+              <use xlink:href="/img/lang.svg?v=33695#svg-au"></use>
+            </svg>
+            <span class="languages__code">au</span>
+            <span class="languages__name">Australian</span>
+          </a>
+          <a href="https://fgfox.com/lang/set/ca" class="languages__link">
+            <svg class="svg-ca">
+              <use xlink:href="/img/lang.svg?v=33695#svg-ca"></use>
+            </svg>
+            <span class="languages__code">ca</span>
+            <span class="languages__name">Canadian</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__top">
+      <img src="assets/img/svg/logo.svg" class="footer__logo" alt="logo" />
+      <nav class="footer__menus">
+        <div class="footer__item">
+          <a href="https://fgfox.com/info/privacy_policy" class="footer__link">
+            <span>Privacy policy</span>
+          </a>
+        </div>
+        <div class="footer__item">
+          <a
+            href="https://fgfox.com/info/terms_and_conditions"
+            class="footer__link"
+          >
+            <span>Terms and Conditions</span>
+          </a>
+        </div>
+        <div class="footer__item">
+          <a href="https://fgfox.com/info/%D1%81ontact_us" class="footer__link">
+            <span>Contact Us</span>
+          </a>
+        </div>
+        <div class="footer__item">
+          <a
+            href="https://fgfox.com/info/responsible_gaming"
+            class="footer__link"
+          >
+            <span>Responsible Gaming</span>
+          </a>
+        </div>
+        <div class="footer__item">
+          <a href="https://fgfox.com/info/about_fgfox" class="footer__link">
+            <span>About FgFox Casino</span>
+          </a>
+        </div>
+        <div class="footer__item footer__item_faq">
+          <a href="https://fgfox.com/faq" class="footer__link">
+            <span>FAQ</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__payments">
+        <div class="footer__payment">
+          <svg class="svg-visa">
+            <use xlink:href="assets/img/svg/payments.svg?v=103521#svg-visa"></use>
+          </svg>
+        </div>
+        <div class="footer__payment">
+          <svg class="svg-mastercard">
+            <use xlink:href="assets/img/svg/payments.svg?v=103521#svg-mastercard"></use>
+          </svg>
+        </div>
+        <div class="footer__payment">
+          <svg class="svg-skrill">
+            <use xlink:href="assets/img/svg/payments.svg?v=103521#svg-skrill"></use>
+          </svg>
+        </div>
+        <div class="footer__payment">
+          <a
+            href="https://member.neteller.com/?mrc=325_NETELLER_Green"
+            target="_blank"
+          >
+            <svg class="svg-neteller">
+              <use xlink:href="assets/img/svg/payments.svg?v=103521#svg-neteller"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="footer__payment">
+          <svg class="svg-ezw">
+            <use xlink:href="assets/img/svg/payments.svg?v=103521#svg-ezw"></use>
+          </svg>
+        </div>
+        <div class="footer__payment">
+          <svg class="svg-neosurf">
+            <use xlink:href="assets/img/svg/payments.svg?v=103521#svg-neosurf"></use>
+          </svg>
+        </div>
+        <div class="footer__payment">
+          <svg class="svg-astropay">
+            <use xlink:href="assets/img/svg/payments.svg?v=103521#svg-astropay"></use>
+          </svg>
+        </div>
+        <div class="footer__payment">
+          <svg class="svg-flexepin">
+            <use xlink:href="assets/img/svg/payments.svg?v=103521#svg-flexepin"></use>
+          </svg>
+        </div>
+        <div class="footer__payment">
+          <svg class="svg-cashtocode">
+            <use xlink:href="assets/img/svg/payments.svg?v=103521#svg-cashtocode"></use>
+          </svg>
+        </div>
+        <div class="footer__payment">
+          <svg class="svg-interac">
+            <use xlink:href="assets/img/svg/payments.svg?v=103521#svg-interac"></use>
+          </svg>
+        </div>
+        <div class="footer__payment">
+          <svg class="svg-jeton">
+            <use xlink:href="assets/img/svg/payments.svg?v=103521#svg-jeton"></use>
+          </svg>
+        </div>
+        <div class="footer__payment">
+          <svg class="svg-multibanco">
+            <use xlink:href="assets/img/svg/payments.svg?v=103521#svg-multibanco"></use>
+          </svg>
+        </div>
+        <div class="footer__payment">
+          <svg class="svg-ecopayz">
+            <use xlink:href="assets/img/svg/payments.svg?v=103521#svg-ecopayz"></use>
+          </svg>
+        </div>
+        <div class="footer__payment">
+          <svg class="svg-banktransfer">
+            <use xlink:href="assets/img/svg/payments.svg?v=103521#svg-banktransfer"></use>
+          </svg>
+        </div>
+        <div class="footer__payment">
+          <svg class="svg-paysafecard">
+            <use xlink:href="assets/img/svg/payments.svg?v=103521#svg-paysafecard"></use>
+          </svg>
+        </div>
+        <div class="footer__payment">
+          <svg class="svg-ripple">
+            <use xlink:href="assets/img/svg/payments.svg?v=103521#svg-ripple"></use>
+          </svg>
+        </div>
+        <div class="footer__payment">
+          <svg class="svg-bitcoin">
+            <use xlink:href="assets/img/svg/payments.svg?v=103521#svg-bitcoin"></use>
+          </svg>
+        </div>
+        <div class="footer__payment">
+          <svg class="svg-ethereum">
+            <use xlink:href="assets/img/svg/payments.svg?v=103521#svg-ethereum"></use>
+          </svg>
+        </div>
+        <div class="footer__payment">
+          <svg class="svg-litecoin">
+            <use xlink:href="assets/img/svg/payments.svg?v=103521#svg-litecoin"></use>
+          </svg>
+        </div>
+        <div class="footer__payment">
+          <svg class="svg-tether">
+            <use xlink:href="assets/img/svg/payments.svg?v=103521#svg-tether"></use>
+          </svg>
+        </div>
+        <div class="footer__payment">
+          <svg class="svg-payop">
+            <use xlink:href="assets/img/svg/payments.svg?v=103521#svg-payop"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="footer__info">
+        <div class="footer__info-license">
+          <div class="footer__info-text">
+            <p>
+              www.fgfox.com is operated by Fair Game Software KFT (registration
+              number 13-09-204926, registered under the laws of Hungary,
+              registered address: 2161 Csomád, Kossuth Lajos út 79, is an agent
+              of FairGame G.P. N.V ) which provides management, payment and
+              support services related to the operation of the website. The
+              operations of the website have been leased by the license holder
+              FairGame G.P. N.V. (registration number 141938, address Abraham de
+              Veerstraat 9, Curacao, with license number GLH-OCCHKTW0703032017
+              and regulated by the laws of Curacao and operates under the Master
+              License of Gaming Services Provider, N.V. #365/JAZ as an
+              Information Service Provider) to Fair Game Software KFT.
+            </p>
+          </div>
+          <div class="footer__info-logos">
+            <a
+              href="https://licensing.gaming-curacao.com/validator/?lh=21c0bec8198be1c2d52fe40bb0af4961"
+              target="_blank"
+            >
+              <img src="assets/img/png/license.png" alt="license" />
+            </a>
+            <span class="footer__info-limit footer__info-limit_left">18+</span>
+          </div>
+        </div>
+        <a
+          href="https://easyrocket.net"
+          class="footer__info-creator"
+          target="_blank"
+        >
+          <img src="assets/img/svg/easyrocket_casino.svg" alt="easyrocket" />
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Build 2.0</title>
+<!--  <link rel="shortcut icon" href="assets/img/favicons/icon-favicon.svg" type="image/svg">-->
+<!--  <link href="assets/fonts/Geometria.woff2" as="font" rel="preload" crossorigin="anonymous">-->
+<!--  <link href="assets/fonts/Geometria-Bold.woff2" as="font" rel="preload" crossorigin="anonymous">-->
+  <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body class="game preloaded">
+
+<div class="wrapper">
+  <main class="page page_game">
+    <section class="game__section js-safariVhfix" style="--vh:8.56px;">
+      <div class="bg ">
+        <div class="bg__wrapper"><img src="assets/img/png/bg.png" alt=""></div>
+      </div>
+      <div class="game__inner">
+        <div class="game-header">
+          <div class="game-header__top">
+            <div class="defaultContainer">
+              <div class="game-header__inner">
+                <button type="button" class="btn-icon game__btn_menu js-openSidebar" title="Open sidebar">
+                  <i class="icon-burger_acc" aria-hidden="true"></i>
+                </button>
+                <p class="game-time">13:08</p>
+                <div class="game__btns">
+                  <p class="game-count">0.00€</p>
+                  <a href="" class="btn-icon game__btn_login">
+                    <i class="icon-game_dep" aria-hidden="true"></i>
+                  </a>
+                  <a href="" class="btn-icon game__btn_login"
+                     title="Log in" rel="ajax:modal">
+                    <i class="icon-game_acc" aria-hidden="true"></i>
+                  </a>
+                  <a href="#faq" class="btn-icon game__btn_help js-faq" title="Help">
+                    <i class="icon-game_support" aria-hidden="true"></i>
+                  </a>
+                  <button type="button" class="btn-icon game__btn_full-screen js-full-screen">
+                    <i class="icon-full-screen-open" aria-hidden="true"></i>
+                  </button>
+                  <a href="https://fgfox.com/" class="btn-icon game__btn_close js-clickToShowLoader"
+                     title="Close the game">
+                    <i class="icon-exit" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="game-header__bot">
+            <div class="defaultContainer">
+            </div>
+          </div>
+          <button type="button" class="game__btn_show js-show-header">
+            <i class="icon-arrow" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div id="game-wrapper" class="game__wrapper">
+          <div id="game-box" class="game__box" style="width: 1553px; height: 874px;">
+            <iframe
+              src="https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20fruitsw&amp;jurisdiction=99&amp;lang=en&amp;lobbyUrl=https%3A%2F%2Ffgfox.com%2Fredirect-lobby&amp;stylename=sfws_gamescasinosw"
+              id="game-iframe" class="game__iframe" frameborder="0" allow="autoplay; fullscreen"></iframe>
+            <div class="game__controls">
+              <button type="button" class="btn-icon game__btn_full-screen js-full-screen">
+                <i class="icon-game__full with-circle" aria-hidden="true"></i>
+                <span class="tooltip">Full screen</span>
+                <span class="tooltip tooltip_active">Normal mode</span>
+              </button>
+              <button type="button" class="btn-icon game__btn_hide-header js-hide-header">
+                <i class="icon-burger_acc with-circle" aria-hidden="true"></i>
+                <span class="tooltip">Hide menu</span>
+                <span class="tooltip tooltip_active">Show menu</span>
+              </button>
+              <button type="button" class="btn-icon game__btn_favorite js-game-favorite " data-game_id="24171"
+                      data-text_add="Add to favorite" data-text_remove="Delete from favorite">
+                <i class="icon-star with-circle" aria-hidden="true"></i>
+                <span class="tooltip">Add to favorite</span>
+                <span class="tooltip tooltip_active">Delete from favorite</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+</div>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
